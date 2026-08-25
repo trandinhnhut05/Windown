@@ -89,4 +89,11 @@ public class PayrollService {
 
         return payrolls;
     }
+
+    public BigDecimal calculateMonthlyLaborCost(int year, int month) {
+        List<PayrollResponse> payrolls = calculateMonthlyPayroll(year, month);
+        return payrolls.stream()
+                .map(PayrollResponse::totalEarned)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+    }
 }

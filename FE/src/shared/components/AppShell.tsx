@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, Briefcase, Package, Users,
-  Calendar, Shield, LogOut, ChevronRight, CheckSquare, DollarSign, Settings
+  Calendar, Shield, LogOut, ChevronRight, CheckSquare, DollarSign, Settings, TrendingUp
 } from 'lucide-react'
 import { useAuthStore } from '@/shared/store/authStore'
 import { reminderApi } from '@/shared/api/reminderApi'
@@ -19,6 +19,7 @@ const navItems: NavItem[] = [
   { to: '/workers', icon: <Users size={18} />, label: 'Danh sách thợ' },
   { to: '/attendance', icon: <CheckSquare size={18} />, label: 'Chấm công' },
   { to: '/payroll', icon: <DollarSign size={18} />, label: 'Tính lương' },
+  { to: '/finance', icon: <TrendingUp size={18} />, label: 'Báo cáo tài chính' },
   { to: '/schedule', icon: <Calendar size={18} />, label: 'Lịch nhắc việc' },
   { to: '/warranty', icon: <Shield size={18} />, label: 'Bảo hành' },
   { to: '/settings', icon: <Settings size={18} />, label: 'Thiết lập' },
@@ -58,6 +59,7 @@ export default function AppShell() {
     if (path.includes('workers')) return 'Danh sách thợ'
     if (path.includes('attendance')) return 'Bảng chấm công'
     if (path.includes('payroll')) return 'Tính lương thợ'
+    if (path.includes('finance')) return 'Báo cáo tài chính'
     if (path.includes('schedule')) return 'Lịch nhắc việc'
     if (path.includes('warranty')) return 'Bảo hành'
     if (path.includes('settings')) return 'Thiết lập & Sao lưu'

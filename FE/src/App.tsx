@@ -8,6 +8,7 @@ import ProjectDetailPage from '@/features/projects/ProjectDetailPage'
 import WorkerListPage from '@/features/workers/WorkerListPage'
 import AttendanceSheetPage from '@/features/attendance/AttendanceSheetPage'
 import PayrollReportPage from '@/features/payroll/PayrollReportPage'
+import FinanceReportPage from '@/features/finance/FinanceReportPage'
 import ReminderListPage from '@/features/reminders/ReminderListPage'
 import WarrantyListPage from '@/features/warranties/WarrantyListPage'
 import BackupRestorePage from '@/features/settings/BackupRestorePage'
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="workers" element={<WorkerListPage />} />
           <Route path="attendance" element={<AttendanceSheetPage />} />
           <Route path="payroll" element={<PayrollReportPage />} />
+          <Route path="finance" element={<FinanceReportPage />} />
           <Route path="schedule" element={<ReminderListPage />} />
           <Route path="warranty" element={<WarrantyListPage />} />
           <Route path="settings" element={<BackupRestorePage />} />
