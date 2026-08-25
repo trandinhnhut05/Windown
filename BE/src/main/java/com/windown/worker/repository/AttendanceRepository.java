@@ -17,6 +17,8 @@ public interface AttendanceRepository extends JpaRepository<Attendance, Long> {
 
     Optional<Attendance> findByWorkerIdAndWorkDate(Long workerId, LocalDate workDate);
 
+    List<Attendance> findByWorkerIdAndWorkDateBetween(Long workerId, LocalDate start, LocalDate end);
+
     @Query("SELECT COUNT(a) FROM Attendance a WHERE a.worker.id = :workerId AND a.workDate BETWEEN :start AND :end AND a.isPresent = true")
     long countPresentDays(
             @Param("workerId") Long workerId,

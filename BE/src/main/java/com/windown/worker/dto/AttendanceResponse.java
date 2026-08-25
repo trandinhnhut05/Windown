@@ -8,5 +8,8 @@ public record AttendanceResponse(
         String workerName,
         LocalDate workDate,
         boolean isPresent,
+        Double hoursWorked,
+        Double otHours,
+        Double otCoefficient,
         String note
 ) {}

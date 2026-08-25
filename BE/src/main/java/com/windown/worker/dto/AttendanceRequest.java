@@ -10,5 +10,11 @@ public record AttendanceRequest(
         @NotNull(message = "Trạng thái chấm công không được để trống")
         Boolean isPresent,
 
+        Double hoursWorked,
+
+        Double otHours,
+
+        Double otCoefficient,
+
         String note
 ) {}

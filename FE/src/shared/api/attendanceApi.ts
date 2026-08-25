@@ -6,12 +6,18 @@ export interface Attendance {
   workerName: string
   workDate: string
   isPresent: boolean
+  hoursWorked?: number
+  otHours?: number
+  otCoefficient?: number
   note: string
 }
 
 export interface AttendanceRequest {
   workerId: number
   isPresent: boolean
+  hoursWorked?: number
+  otHours?: number
+  otCoefficient?: number
   note?: string
 }
 

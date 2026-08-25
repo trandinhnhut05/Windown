@@ -33,6 +33,7 @@ import ProjectMaterialsTab from './ProjectMaterialsTab'
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import ProjectWarrantyTab from './ProjectWarrantyTab'
+import ProjectDrawingsTab from './ProjectDrawingsTab'
 
 export default function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -41,7 +42,7 @@ export default function ProjectDetailPage() {
   const [loading, setLoading] = useState(true)
   const [showEdit, setShowEdit] = useState(false)
   const [showPayment, setShowPayment] = useState(false)
-  const [activeTab, setActiveTab] = useState<'payment' | 'materials' | 'warranty'>('payment')
+  const [activeTab, setActiveTab] = useState<'payment' | 'materials' | 'drawings' | 'warranty'>('payment')
 
   const exportQuotation = () => {
     if (!project) return
@@ -215,6 +216,13 @@ export default function ProjectDetailPage() {
           📦 Chi phí & Vật tư
         </button>
         <button
+          className={`btn ${activeTab === 'drawings' ? 'btn-primary' : 'btn-secondary'}`}
+          onClick={() => setActiveTab('drawings')}
+          style={{ fontSize: 13, fontWeight: 700 }}
+        >
+          🎨 Bản vẽ kỹ thuật
+        </button>
+        <button
           className={`btn ${activeTab === 'warranty' ? 'btn-primary' : 'btn-secondary'}`}
           onClick={() => setActiveTab('warranty')}
           style={{ fontSize: 13, fontWeight: 700 }}
@@ -373,6 +381,10 @@ export default function ProjectDetailPage() {
 
       {activeTab === 'materials' && (
         <ProjectMaterialsTab projectId={project.id} totalAmount={project.totalAmount} onUpdate={load} />
+      )}
+
+      {activeTab === 'drawings' && (
+        <ProjectDrawingsTab projectId={project.id} />
       )}
 
       {activeTab === 'warranty' && (

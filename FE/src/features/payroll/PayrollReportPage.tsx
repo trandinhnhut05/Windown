@@ -1,22 +1,24 @@
 import { useEffect, useState, useMemo } from 'react'
-import { Calendar, Printer, DollarSign, Wallet, PiggyBank, HandCoins } from 'lucide-react'
+import { Calendar, Printer, DollarSign, Wallet, PiggyBank, HandCoins, Wrench } from 'lucide-react'
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import { payrollApi } from '@/shared/api/payrollApi'
 import type { Payroll } from '@/shared/api/payrollApi'
 import { formatCurrency } from '@/shared/utils/format'
 import AdvanceModal from './AdvanceModal'
+import PieceworkModal from './PieceworkModal'
 
 export default function PayrollReportPage() {
   const [payrollList, setPayrollList] = useState<Payroll[]>([])
   const [loading, setLoading] = useState(true)
-  
+
   // Date State
   const [year, setYear] = useState(new Date().getFullYear())
   const [month, setMonth] = useState(new Date().getMonth() + 1)
 
   // Modal State
   const [advanceTarget, setAdvanceTarget] = useState<Payroll | null>(null)
+  const [pieceworkTarget, setPieceworkTarget] = useState<Payroll | null>(null)
 
   const loadData = async () => {
     setLoading(true)
@@ -74,13 +76,13 @@ export default function PayrollReportPage() {
     doc.setFontSize(12)
     doc.text('CHI TIET BANG LUONG THO:', 20, 80)
 
-    const headers = [['Ten tho', 'Luong ngay', 'Cong thang', 'Tong luong', 'Da ung', 'Thuc linh']]
+    const headers = [['Ten tho', 'Cong ngay', 'Tang ca', 'Luong cong', 'Luong khoan', 'Da ung', 'Thuc linh']]
     const rows = payrollList.map((p) => [
-      // Remove accents or transliterate Vietnamese names dynamically to avoid Helvetica box glitches
       stripVietnameseAccents(p.workerName),
-      formatCurrency(p.dailyWage),
       `${p.presentDays} cong`,
-      formatCurrency(p.totalEarned),
+      `${p.totalOtHours}h OT`,
+      formatCurrency(p.totalEarnedFromAttendance),
+      formatCurrency(p.totalPieceworkAmount),
       formatCurrency(p.totalAdvanced),
       formatCurrency(p.remainingSalary),
     ])
@@ -113,7 +115,7 @@ export default function PayrollReportPage() {
         <div>
           <h1 style={{ fontSize: 24, fontWeight: 800 }}>💵 Tính lương thợ xưởng</h1>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 14, marginTop: 4 }}>
-            Tự động tổng hợp ngày công, đối chiếu tiền đã ứng và kết xuất tiền thực nhận của thợ.
+            Tự động tổng hợp ngày công, giờ tăng ca (OT), đối chiếu lương khoán sản phẩm và tiền tạm ứng của thợ.
           </p>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
@@ -160,7 +162,10 @@ export default function PayrollReportPage() {
                 <tr>
                   <th>Tên thợ</th>
                   <th style={{ textAlign: 'right' }}>Lương ngày</th>
-                  <th style={{ textAlign: 'center' }}>Số ngày công</th>
+                  <th style={{ textAlign: 'center' }}>Công ngày</th>
+                  <th style={{ textAlign: 'center' }}>Tăng ca</th>
+                  <th style={{ textAlign: 'right' }}>Lương công nhật</th>
+                  <th style={{ textAlign: 'right' }}>Lương khoán</th>
                   <th style={{ textAlign: 'right' }}>Tổng lương</th>
                   <th style={{ textAlign: 'right' }}>Đã ứng</th>
                   <th style={{ textAlign: 'right' }}>Thực lĩnh còn lại</th>
@@ -173,6 +178,9 @@ export default function PayrollReportPage() {
                     <td style={{ fontWeight: 700, color: 'var(--color-text-primary)' }}>{p.workerName}</td>
                     <td style={{ textAlign: 'right', color: 'var(--color-text-secondary)' }}>{formatCurrency(p.dailyWage)}</td>
                     <td style={{ textAlign: 'center', fontWeight: 600 }}>{p.presentDays} công</td>
+                    <td style={{ textAlign: 'center', fontWeight: 600 }}>{p.totalOtHours > 0 ? `${p.totalOtHours}h` : '0h'}</td>
+                    <td style={{ textAlign: 'right', color: 'var(--color-text-secondary)' }}>{formatCurrency(p.totalEarnedFromAttendance)}</td>
+                    <td style={{ textAlign: 'right', color: 'var(--color-success)', fontWeight: 600 }}>{formatCurrency(p.totalPieceworkAmount)}</td>
                     <td style={{ textAlign: 'right', fontWeight: 700, color: 'var(--color-text-primary)' }}>{formatCurrency(p.totalEarned)}</td>
                     <td style={{ textAlign: 'right', color: 'var(--color-warning)', fontWeight: 600 }}>{p.totalAdvanced > 0 ? `-${formatCurrency(p.totalAdvanced)}` : '0 ₫'}</td>
                     <td style={{ textAlign: 'right', fontWeight: 800, color: p.remainingSalary >= 0 ? 'var(--color-success)' : 'var(--color-danger)' }}>
@@ -183,9 +191,17 @@ export default function PayrollReportPage() {
                         <button
                           className="btn btn-secondary btn-sm"
                           onClick={() => setAdvanceTarget(p)}
-                          style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '4px 10px', fontSize: 12, fontWeight: 700 }}
+                          style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '4px 8px', fontSize: 11, fontWeight: 700 }}
                         >
                           💸 Ghi ứng
+                        </button>
+                        <button
+                          className="btn btn-secondary btn-sm"
+                          onClick={() => setPieceworkTarget(p)}
+                          style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '4px 8px', fontSize: 11, fontWeight: 700, borderColor: '#a7f3d0', color: '#047857', background: '#ecfdf5' }}
+                        >
+                          <Wrench size={12} />
+                          Ghi khoán
                         </button>
                       </div>
                     </td>
@@ -202,6 +218,14 @@ export default function PayrollReportPage() {
           worker={advanceTarget}
           onSuccess={() => { setAdvanceTarget(null); loadData() }}
           onClose={() => setAdvanceTarget(null)}
+        />
+      )}
+
+      {pieceworkTarget && (
+        <PieceworkModal
+          worker={pieceworkTarget}
+          onSuccess={() => { setPieceworkTarget(null); loadData() }}
+          onClose={() => setPieceworkTarget(null)}
         />
       )}
     </div>

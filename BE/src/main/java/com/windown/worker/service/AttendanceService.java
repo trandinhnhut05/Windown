@@ -50,12 +50,18 @@ public class AttendanceService {
 
             if (attendance != null) {
                 attendance.setPresent(checkIn.isPresent());
+                attendance.setHoursWorked(checkIn.hoursWorked() != null ? checkIn.hoursWorked() : 8.0);
+                attendance.setOtHours(checkIn.otHours() != null ? checkIn.otHours() : 0.0);
+                attendance.setOtCoefficient(checkIn.otCoefficient() != null ? checkIn.otCoefficient() : 1.5);
                 attendance.setNote(checkIn.note());
             } else {
                 attendance = Attendance.builder()
                         .worker(worker)
                         .workDate(workDate)
                         .isPresent(checkIn.isPresent())
+                        .hoursWorked(checkIn.hoursWorked() != null ? checkIn.hoursWorked() : 8.0)
+                        .otHours(checkIn.otHours() != null ? checkIn.otHours() : 0.0)
+                        .otCoefficient(checkIn.otCoefficient() != null ? checkIn.otCoefficient() : 1.5)
                         .note(checkIn.note())
                         .build();
             }
@@ -73,6 +79,9 @@ public class AttendanceService {
                 a.getWorker().getName(),
                 a.getWorkDate(),
                 a.isPresent(),
+                a.getHoursWorked(),
+                a.getOtHours(),
+                a.getOtCoefficient(),
                 a.getNote()
         );
     }

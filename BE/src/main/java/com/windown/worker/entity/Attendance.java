@@ -31,6 +31,18 @@ public class Attendance {
     @Builder.Default
     private boolean isPresent = true;
 
+    @Column(name = "hours_worked", nullable = false, columnDefinition = "DECIMAL(4,2)")
+    @Builder.Default
+    private Double hoursWorked = 8.0;
+
+    @Column(name = "ot_hours", nullable = false, columnDefinition = "DECIMAL(4,2)")
+    @Builder.Default
+    private Double otHours = 0.0;
+
+    @Column(name = "ot_coefficient", nullable = false, columnDefinition = "DECIMAL(3,2)")
+    @Builder.Default
+    private Double otCoefficient = 1.5;
+
     @Column(length = 200)
     private String note;
 }

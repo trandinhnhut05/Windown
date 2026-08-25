@@ -6,7 +6,10 @@ public record PayrollResponse(
         Long workerId,
         String workerName,
         BigDecimal dailyWage,
-        long presentDays,
+        Double presentDays,
+        Double totalOtHours,
+        BigDecimal totalEarnedFromAttendance,
+        BigDecimal totalPieceworkAmount,
         BigDecimal totalEarned,
         BigDecimal totalAdvanced,
         BigDecimal remainingSalary
