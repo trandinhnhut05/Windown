@@ -1,10 +1,11 @@
 import { useEffect, useMemo } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X, Calculator } from 'lucide-react'
 import { projectApi } from '@/shared/api/projectApi'
 import { formatCurrency } from '@/shared/utils/format'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 interface Project {
   id: number
@@ -61,6 +62,7 @@ export default function ProjectFormModal({ project, onSuccess, onClose }: Props)
     handleSubmit,
     watch,
     reset,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -174,13 +176,19 @@ export default function ProjectFormModal({ project, onSuccess, onClose }: Props)
                   />
                   {errors.widthM && <span className="form-error">{errors.widthM.message}</span>}
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
                   <label className="form-label">Đơn giá (VND/m²) <span className="required">*</span></label>
-                  <input
-                    {...register('unitPrice')}
-                    type="number"
-                    className={`form-input ${errors.unitPrice ? 'error' : ''}`}
-                    placeholder="850000"
+                  <Controller
+                    control={control}
+                    name="unitPrice"
+                    render={({ field }) => (
+                      <CurrencyInput
+                        value={field.value}
+                        onChange={field.onChange}
+                        error={!!errors.unitPrice}
+                        placeholder="Nhập đơn giá..."
+                      />
+                    )}
                   />
                   {errors.unitPrice && <span className="form-error">{errors.unitPrice.message}</span>}
                 </div>
@@ -217,9 +225,21 @@ export default function ProjectFormModal({ project, onSuccess, onClose }: Props)
                 Thanh toán & Tiến độ
               </h3>
               <div className="form-row" style={{ gap: 12 }}>
-                <div className="form-group">
+                <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
                   <label className="form-label">Tiền cọc (VND)</label>
-                  <input {...register('deposit')} type="number" className="form-input" placeholder="0" />
+                  <Controller
+                    control={control}
+                    name="deposit"
+                    render={({ field }) => (
+                      <CurrencyInput
+                        value={field.value ?? 0}
+                        onChange={field.onChange}
+                        error={!!errors.deposit}
+                        placeholder="0"
+                      />
+                    )}
+                  />
+                  {errors.deposit && <span className="form-error">{errors.deposit.message}</span>}
                 </div>
                 <div className="form-group">
                   <label className="form-label">Trạng thái</label>

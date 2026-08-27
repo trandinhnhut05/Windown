@@ -7,6 +7,7 @@ import type { Payroll } from '@/shared/api/payrollApi'
 import { formatCurrency } from '@/shared/utils/format'
 import AdvanceModal from './AdvanceModal'
 import PieceworkModal from './PieceworkModal'
+import PayrollPrintModal from './PayrollPrintModal'
 
 export default function PayrollReportPage() {
   const [payrollList, setPayrollList] = useState<Payroll[]>([])
@@ -19,6 +20,7 @@ export default function PayrollReportPage() {
   // Modal State
   const [advanceTarget, setAdvanceTarget] = useState<Payroll | null>(null)
   const [pieceworkTarget, setPieceworkTarget] = useState<Payroll | null>(null)
+  const [showPrintModal, setShowPrintModal] = useState(false)
 
   const loadData = async () => {
     setLoading(true)
@@ -129,7 +131,7 @@ export default function PayrollReportPage() {
               <option key={y} value={y}>Năm {y}</option>
             ))}
           </select>
-          <button className="btn btn-primary" onClick={exportPDF} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <button className="btn btn-primary" onClick={() => setShowPrintModal(true)} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <Printer size={16} />
             In bảng lương PDF
           </button>
@@ -226,6 +228,15 @@ export default function PayrollReportPage() {
           worker={pieceworkTarget}
           onSuccess={() => { setPieceworkTarget(null); loadData() }}
           onClose={() => setPieceworkTarget(null)}
+        />
+      )}
+
+      {showPrintModal && (
+        <PayrollPrintModal
+          payrollList={payrollList}
+          month={month}
+          year={year}
+          onClose={() => setShowPrintModal(false)}
         />
       )}
     </div>

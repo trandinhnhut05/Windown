@@ -1,9 +1,10 @@
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X, CreditCard } from 'lucide-react'
 import { projectApi } from '@/shared/api/projectApi'
 import { formatCurrency } from '@/shared/utils/format'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   amount: z.coerce.number().min(1000, 'Số tiền phải ít nhất 1.000 VND'),
@@ -21,7 +22,7 @@ interface Props {
 }
 
 export default function PaymentModal({ projectId, remainingDebt, onSuccess, onClose }: Props) {
-  const { register, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
+  const { register, handleSubmit, setValue, control, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: { type: 'EXTRA' },
   })
@@ -87,18 +88,24 @@ export default function PaymentModal({ projectId, remainingDebt, onSuccess, onCl
               </div>
             </div>
 
-            <div className="form-group">
-              <label className="form-label">Số tiền (VND) <span className="required">*</span></label>
-              <input
-                {...register('amount')}
-                type="number"
-                className={`form-input ${errors.amount ? 'error' : ''}`}
-                placeholder="Nhập số tiền"
+            <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
+              <label className="form-label">Số tiền <span className="required">*</span></label>
+              <Controller
+                control={control}
+                name="amount"
+                render={({ field }) => (
+                  <CurrencyInput
+                    value={field.value}
+                    onChange={field.onChange}
+                    error={!!errors.amount}
+                    placeholder="Nhập số tiền..."
+                  />
+                )}
               />
               {remainingDebt > 0 && (
                 <button
                   type="button"
-                  style={{ fontSize: 12, color: 'var(--color-primary)', marginTop: 4, background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
+                  style={{ alignSelf: 'flex-start', fontSize: 12, color: 'var(--color-primary)', marginTop: 4, background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
                   onClick={() => setValue('amount', remainingDebt)}
                 >
                   Điền đủ số còn nợ ({formatCurrency(remainingDebt)})

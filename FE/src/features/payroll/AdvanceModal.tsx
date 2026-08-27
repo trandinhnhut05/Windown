@@ -1,9 +1,10 @@
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X, Calendar } from 'lucide-react'
 import { payrollApi } from '@/shared/api/payrollApi'
 import type { Payroll } from '@/shared/api/payrollApi'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   amount: z.coerce.number().min(1000, 'Số tiền ứng tối thiểu 1.000 ₫'),
@@ -23,6 +24,7 @@ export default function AdvanceModal({ worker, onSuccess, onClose }: Props) {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -65,13 +67,19 @@ export default function AdvanceModal({ worker, onSuccess, onClose }: Props) {
             </div>
 
             {/* Số tiền ứng */}
-            <div className="form-group">
-              <label className="form-label">Số tiền ứng (VND) <span className="required">*</span></label>
-              <input
-                {...register('amount')}
-                type="number"
-                className={`form-input ${errors.amount ? 'error' : ''}`}
-                placeholder="Ví dụ: 200000"
+            <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
+              <label className="form-label">Số tiền ứng <span className="required">*</span></label>
+              <Controller
+                control={control}
+                name="amount"
+                render={({ field }) => (
+                  <CurrencyInput
+                    value={field.value}
+                    onChange={field.onChange}
+                    error={!!errors.amount}
+                    placeholder="Ví dụ: 200.000"
+                  />
+                )}
               />
               {errors.amount && <span className="form-error">{errors.amount.message}</span>}
             </div>

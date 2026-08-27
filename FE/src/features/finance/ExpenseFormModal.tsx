@@ -1,9 +1,10 @@
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X } from 'lucide-react'
 import { financeApi } from '@/shared/api/financeApi'
 import type { ExpenseCategory } from '@/shared/api/financeApi'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   category: z.enum(['RENT', 'ELECTRICITY', 'TRANSPORT', 'MACHINERY_MAINTENANCE', 'OTHER']),
@@ -23,6 +24,7 @@ export default function ExpenseFormModal({ onSuccess, onClose }: Props) {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -73,13 +75,19 @@ export default function ExpenseFormModal({ onSuccess, onClose }: Props) {
             </div>
 
             {/* Số tiền */}
-            <div className="form-group" style={{ marginBottom: 0 }}>
-              <label className="form-label">Số tiền chi (VND) <span className="required">*</span></label>
-              <input
-                {...register('amount')}
-                type="number"
-                className={`form-input ${errors.amount ? 'error' : ''}`}
-                placeholder="Ví dụ: 3500000"
+            <div className="form-group" style={{ marginBottom: 0, display: 'flex', flexDirection: 'column' }}>
+              <label className="form-label">Số tiền chi <span className="required">*</span></label>
+              <Controller
+                control={control}
+                name="amount"
+                render={({ field }) => (
+                  <CurrencyInput
+                    value={field.value}
+                    onChange={field.onChange}
+                    error={!!errors.amount}
+                    placeholder="Ví dụ: 3.500.000"
+                  />
+                )}
               />
               {errors.amount && <span className="form-error">{errors.amount.message}</span>}
             </div>

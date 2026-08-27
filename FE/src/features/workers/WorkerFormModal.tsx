@@ -1,9 +1,10 @@
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X } from 'lucide-react'
 import { workerApi } from '@/shared/api/workerApi'
 import type { Worker } from '@/shared/api/workerApi'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   name: z.string().min(1, 'Tên thợ không được để trống').max(100),
@@ -27,6 +28,7 @@ export default function WorkerFormModal({ worker, onSuccess, onClose }: Props) {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -90,13 +92,19 @@ export default function WorkerFormModal({ worker, onSuccess, onClose }: Props) {
             </div>
 
             {/* Lương ngày */}
-            <div className="form-group">
-              <label className="form-label">Lương một ngày công (VND) <span className="required">*</span></label>
-              <input
-                {...register('dailyWage')}
-                type="number"
-                className={`form-input ${errors.dailyWage ? 'error' : ''}`}
-                placeholder="Ví dụ: 350000"
+            <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
+              <label className="form-label">Lương một ngày công <span className="required">*</span></label>
+              <Controller
+                control={control}
+                name="dailyWage"
+                render={({ field }) => (
+                  <CurrencyInput
+                    value={field.value}
+                    onChange={field.onChange}
+                    error={!!errors.dailyWage}
+                    placeholder="Ví dụ: 350.000"
+                  />
+                )}
               />
               {errors.dailyWage && <span className="form-error">{errors.dailyWage.message}</span>}
             </div>

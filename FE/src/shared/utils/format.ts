@@ -64,3 +64,70 @@ export const paymentTypeMap: Record<string, string> = {
   EXTRA:   'Thu thêm',
   FINAL:   'Thanh toán đủ',
 }
+
+/**
+ * Đọc số thành chữ (tiếng Việt) để người dùng dễ kiểm tra khi nhập tiền
+ */
+export const numberToVietnameseWords = (num: number | string | null | undefined): string => {
+  if (num == null) return ''
+  const parsed = typeof num === 'string' ? parseFloat(num.replace(/\D/g, '')) : num
+  if (isNaN(parsed) || parsed <= 0) return ''
+  if (parsed > 999_999_999_999) return 'Số quá lớn (vượt quá 999 tỷ)'
+
+  const units = ['', 'nghìn', 'triệu', 'tỷ']
+  const digits = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+
+  const readThreeDigits = (n: number, showZeroHundred: boolean): string => {
+    let hundred = Math.floor(n / 100)
+    let ten = Math.floor((n % 100) / 10)
+    let unit = n % 10
+    let res = ''
+
+    if (hundred > 0 || showZeroHundred) {
+      res += digits[hundred] + ' trăm '
+    }
+
+    if (ten > 0) {
+      if (ten === 1) {
+        res += 'mười '
+      } else {
+        res += digits[ten] + ' mươi '
+      }
+    } else if (hundred > 0 && unit > 0) {
+      res += 'lẻ '
+    }
+
+    if (unit > 0) {
+      if (unit === 1 && ten > 1) {
+        res += 'mốt '
+      } else if (unit === 5 && ten > 0) {
+        res += 'lăm '
+      } else {
+        res += digits[unit] + ' '
+      }
+    }
+
+    return res
+  }
+
+  let temp = Math.floor(parsed)
+  let groups: number[] = []
+  while (temp > 0) {
+    groups.push(temp % 1000)
+    temp = Math.floor(temp / 1000)
+  }
+
+  let words = ''
+  for (let i = groups.length - 1; i >= 0; i--) {
+    const g = groups[i]
+    if (g > 0) {
+      const showZero = i < groups.length - 1
+      const gWords = readThreeDigits(g, showZero)
+      words += gWords + units[i] + ' '
+    }
+  }
+
+  words = words.trim()
+  if (!words) return ''
+  return words.charAt(0).toUpperCase() + words.slice(1) + ' đồng'
+}

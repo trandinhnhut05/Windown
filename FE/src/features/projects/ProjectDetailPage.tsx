@@ -34,6 +34,7 @@ import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import ProjectWarrantyTab from './ProjectWarrantyTab'
 import ProjectDrawingsTab from './ProjectDrawingsTab'
+import QuotationPrintModal from './QuotationPrintModal'
 
 export default function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -42,6 +43,7 @@ export default function ProjectDetailPage() {
   const [loading, setLoading] = useState(true)
   const [showEdit, setShowEdit] = useState(false)
   const [showPayment, setShowPayment] = useState(false)
+  const [showPrintModal, setShowPrintModal] = useState(false)
   const [activeTab, setActiveTab] = useState<'payment' | 'materials' | 'drawings' | 'warranty'>('payment')
 
   const exportQuotation = () => {
@@ -184,7 +186,7 @@ export default function ProjectDetailPage() {
           <h1 style={{ fontSize: 22, fontWeight: 800, marginTop: 4 }}>{project.name}</h1>
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
-          <button className="btn btn-secondary" onClick={exportQuotation} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <button className="btn btn-secondary" onClick={() => setShowPrintModal(true)} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <FileText size={15} />
             Báo giá PDF
           </button>
@@ -405,6 +407,13 @@ export default function ProjectDetailPage() {
           remainingDebt={project.remainingDebt}
           onSuccess={() => { setShowPayment(false); load() }}
           onClose={() => setShowPayment(false)}
+        />
+      )}
+
+      {showPrintModal && (
+        <QuotationPrintModal
+          project={project}
+          onClose={() => setShowPrintModal(false)}
         />
       )}
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X, Plus, Trash2, Calendar, DollarSign } from 'lucide-react'
@@ -8,6 +8,7 @@ import type { Payroll, Piecework } from '@/shared/api/payrollApi'
 import { projectApi } from '@/shared/api/projectApi'
 import type { Project } from '@/shared/api/projectApi'
 import { formatCurrency, formatDate } from '@/shared/utils/format'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   projectId: z.string().optional(),
@@ -34,6 +35,7 @@ export default function PieceworkModal({ worker, onSuccess, onClose }: Props) {
     register,
     handleSubmit,
     reset,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -165,12 +167,18 @@ export default function PieceworkModal({ worker, onSuccess, onClose }: Props) {
 
               {/* Đơn giá */}
               <div className="form-group" style={{ marginBottom: 0 }}>
-                <label className="form-label">Đơn giá khoán (VND) <span className="required">*</span></label>
-                <input
-                  {...register('unitPrice')}
-                  type="number"
-                  className={`form-input ${errors.unitPrice ? 'error' : ''}`}
-                  placeholder="Ví dụ: 150000"
+                <label className="form-label">Đơn giá khoán <span className="required">*</span></label>
+                <Controller
+                  control={control}
+                  name="unitPrice"
+                  render={({ field }) => (
+                    <CurrencyInput
+                      value={field.value}
+                      onChange={field.onChange}
+                      error={!!errors.unitPrice}
+                      placeholder="Ví dụ: 150.000"
+                    />
+                  )}
                 />
                 {errors.unitPrice && <span className="form-error">{errors.unitPrice.message}</span>}
               </div>
@@ -209,7 +217,7 @@ export default function PieceworkModal({ worker, onSuccess, onClose }: Props) {
                 <p style={{ marginTop: 8, fontSize: 13, fontWeight: 600 }}>Chưa có công việc khoán nào</p>
               </div>
             ) : (
-              <div style={{ flex: 1, overflowY: 'auto', maxHeights: '400px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-sm)' }}>
+              <div style={{ flex: 1, overflowY: 'auto', maxHeight: '400px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-sm)' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
                   <thead>
                     <tr style={{ background: 'var(--color-bg-light)', borderBottom: '1px solid var(--color-border)', textAlign: 'left' }}>

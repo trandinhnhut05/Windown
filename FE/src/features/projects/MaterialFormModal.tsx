@@ -1,11 +1,12 @@
 import { useEffect, useState, useMemo, useRef } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { X, Search } from 'lucide-react'
 import { materialApi } from '@/shared/api/materialApi'
 import type { Material, MaterialTemplate } from '@/shared/api/materialApi'
 import { formatCurrency } from '@/shared/utils/format'
+import CurrencyInput from '@/shared/components/CurrencyInput'
 
 const schema = z.object({
   name: z.string().min(1, 'Tên vật tư không được để trống').max(100),
@@ -36,6 +37,7 @@ export default function MaterialFormModal({ projectId, material, onSuccess, onCl
     handleSubmit,
     watch,
     setValue,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -185,13 +187,19 @@ export default function MaterialFormModal({ projectId, material, onSuccess, onCl
                 />
                 {errors.quantity && <span className="form-error">{errors.quantity.message}</span>}
               </div>
-              <div className="form-group">
-                <label className="form-label">Đơn giá (VND) <span className="required">*</span></label>
-                <input
-                  {...register('unitPrice')}
-                  type="number"
-                  className={`form-input ${errors.unitPrice ? 'error' : ''}`}
-                  placeholder="50000"
+              <div className="form-group" style={{ display: 'flex', flexDirection: 'column' }}>
+                <label className="form-label">Đơn giá <span className="required">*</span></label>
+                <Controller
+                  control={control}
+                  name="unitPrice"
+                  render={({ field }) => (
+                    <CurrencyInput
+                      value={field.value}
+                      onChange={field.onChange}
+                      error={!!errors.unitPrice}
+                      placeholder="Nhập đơn giá..."
+                    />
+                  )}
                 />
                 {errors.unitPrice && <span className="form-error">{errors.unitPrice.message}</span>}
               </div>
