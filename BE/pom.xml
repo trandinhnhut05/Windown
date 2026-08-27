@@ -56,6 +56,12 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- SQLite -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+        </dependency>
+
         <!-- Flyway for DB migrations -->
         <dependency>
             <groupId>org.flywaydb</groupId>
