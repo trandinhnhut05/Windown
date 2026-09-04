@@ -13,6 +13,7 @@ import ReminderListPage from '@/features/reminders/ReminderListPage'
 import WarrantyListPage from '@/features/warranties/WarrantyListPage'
 import BackupRestorePage from '@/features/settings/BackupRestorePage'
 import WarehousePage from '@/features/warehouse/WarehousePage'
+import PortalPage from '@/features/portal/PortalPage'
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
@@ -23,16 +24,25 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public Corporate Portal (SEO & Lead Generation) */}
+        <Route path="/" element={<PortalPage />} />
+        <Route path="/dich-vu" element={<PortalPage />} />
+        <Route path="/san-pham" element={<PortalPage />} />
+        <Route path="/du-an" element={<PortalPage />} />
+        <Route path="/quy-trinh" element={<PortalPage />} />
+        <Route path="/lien-he" element={<PortalPage />} />
+
+        {/* Authentication */}
         <Route path="/login" element={<LoginPage />} />
+
+        {/* Internal ERP & Workshop Management */}
         <Route
-          path="/"
           element={
             <PrivateRoute>
               <AppShell />
             </PrivateRoute>
           }
         >
-          <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="projects" element={<ProjectListPage />} />
           <Route path="projects/:id" element={<ProjectDetailPage />} />

@@ -1,0 +1,234 @@
+/* ============================================================
+   INDUSTRIAL PREMIUM DESIGN SYSTEM
+   Tone: Charcoal Dark (#171A1D), Metallic Gray (#3F454A), Light (#F5F5F5), Industrial Orange (#F28C28)
+   Ratio: 60% Dark / 25% Light / 10% Metallic Gray / 5% Orange Accent
+   ============================================================ */
+
+:root {
+  --portal-bg: #171A1D;
+  --portal-bg-secondary: #1F2327;
+  --portal-bg-card: #22272C;
+  --portal-bg-card-hover: #2B3137;
+  --portal-metal: #3F454A;
+  --portal-metal-light: #525A60;
+  --portal-text: #F5F5F5;
+  --portal-text-secondary: #C4CBD0;
+  --portal-text-muted: #8E98A0;
+  --portal-orange: #F28C28;
+  --portal-orange-glow: rgba(242, 140, 40, 0.35);
+  --portal-orange-hover: #ff9b3d;
+  --portal-border: rgba(217, 221, 224, 0.14);
+  --portal-border-hover: rgba(242, 140, 40, 0.45);
+  --portal-border-light: #D9DDE0;
+}
+
+/* Base resets for portal */
+.portal-wrapper {
+  background-color: var(--portal-bg);
+  color: var(--portal-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.portal-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .portal-container {
+    padding: 0 16px;
+  }
+}
+
+/* Typography elements */
+.portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(242, 140, 40, 0.12);
+  border: 1px solid var(--portal-border-hover);
+  border-radius: 100px;
+  color: var(--portal-orange);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portal-section-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--portal-text);
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .portal-section-title {
+    font-size: 28px;
+  }
+}
+
+.portal-section-desc {
+  font-size: 16px;
+  color: var(--portal-text-secondary);
+  max-width: 680px;
+  margin-top: 10px;
+}
+
+/* Glassmorphism card */
+.portal-card {
+  background: var(--portal-bg-card);
+  border: 1px solid var(--portal-border);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.portal-card:hover {
+  border-color: var(--portal-border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--portal-orange-glow);
+}
+
+/* Metallic gradient button */
+.btn-portal-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #F28C28 0%, #E67710 100%);
+  color: #171A1D;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 13px 26px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px -4px var(--portal-orange-glow);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-portal-primary:hover {
+  background: linear-gradient(135deg, #ff9938 0%, #f28c28 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(242, 140, 40, 0.55);
+}
+
+.btn-portal-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--portal-text);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 26px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-portal-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Header sticky */
+.portal-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(23, 26, 29, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--portal-border);
+  transition: all 0.25s ease;
+}
+
+/* Grid systems */
+.portal-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.portal-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.portal-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .portal-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .portal-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .portal-grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .portal-grid-4 { grid-template-columns: 1fr; }
+  .portal-grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Section Spacing */
+.portal-section {
+  padding: 96px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .portal-section {
+    padding: 64px 0;
+  }
+}
+
+/* Glow line effect */
+.portal-glow-line {
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--portal-orange), transparent);
+  margin-top: 14px;
+}
+
+/* Custom Scrollbar */
+.portal-wrapper ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.portal-wrapper ::-webkit-scrollbar-track {
+  background: #171A1D;
+}
+
+.portal-wrapper ::-webkit-scrollbar-thumb {
+  background: #3F454A;
+  border-radius: 4px;
+}
+
+.portal-wrapper ::-webkit-scrollbar-thumb:hover {
+  background: #F28C28;
+}

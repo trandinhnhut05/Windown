@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, Briefcase, Package, Users,
-  Calendar, Shield, LogOut, ChevronRight, CheckSquare, DollarSign, Settings, TrendingUp
+  Calendar, Shield, LogOut, ChevronRight, CheckSquare, DollarSign, Settings, TrendingUp, Globe
 } from 'lucide-react'
 import { useAuthStore } from '@/shared/store/authStore'
 import { reminderApi } from '@/shared/api/reminderApi'
@@ -110,6 +110,32 @@ export default function AppShell() {
             </NavLink>
           ))}
         </nav>
+
+        <div style={{ padding: '0 12px 14px' }}>
+          <a
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 8,
+              padding: '9px 12px',
+              borderRadius: 8,
+              background: 'rgba(242, 140, 40, 0.12)',
+              border: '1px solid rgba(242, 140, 40, 0.3)',
+              color: '#F28C28',
+              fontSize: 12.5,
+              fontWeight: 700,
+              textDecoration: 'none',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <Globe size={15} />
+            <span>Xem Website Doanh Nghiệp</span>
+          </a>
+        </div>
 
         <div className="sidebar-footer">
           <div className="user-info">
