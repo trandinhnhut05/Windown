@@ -41,3 +41,9 @@ tmp/
 XuongCoKhi-v1.0/
 XuongCoKhi-v1.0.zip
 ManhNghiaWindow-Setup.exe
+
+# Local data & database files
+*.db
+data/
+BE/data/
+

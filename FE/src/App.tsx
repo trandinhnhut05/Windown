@@ -12,6 +12,7 @@ import FinanceReportPage from '@/features/finance/FinanceReportPage'
 import ReminderListPage from '@/features/reminders/ReminderListPage'
 import WarrantyListPage from '@/features/warranties/WarrantyListPage'
 import BackupRestorePage from '@/features/settings/BackupRestorePage'
+import WarehousePage from '@/features/warehouse/WarehousePage'
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="projects" element={<ProjectListPage />} />
           <Route path="projects/:id" element={<ProjectDetailPage />} />
+          <Route path="warehouse" element={<WarehousePage />} />
           <Route path="workers" element={<WorkerListPage />} />
           <Route path="attendance" element={<AttendanceSheetPage />} />
           <Route path="payroll" element={<PayrollReportPage />} />

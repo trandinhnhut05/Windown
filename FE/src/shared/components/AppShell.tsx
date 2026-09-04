@@ -16,6 +16,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/dashboard', icon: <LayoutDashboard size={18} />, label: 'Tổng quan' },
   { to: '/projects', icon: <Briefcase size={18} />, label: 'Công trình' },
+  { to: '/warehouse', icon: <Package size={18} />, label: 'Quản lý kho' },
   { to: '/workers', icon: <Users size={18} />, label: 'Danh sách thợ' },
   { to: '/attendance', icon: <CheckSquare size={18} />, label: 'Chấm công' },
   { to: '/payroll', icon: <DollarSign size={18} />, label: 'Tính lương' },
@@ -55,6 +56,7 @@ export default function AppShell() {
     const path = window.location.pathname
     if (path.includes('dashboard')) return 'Tổng quan'
     if (path.includes('projects')) return 'Quản lý Công trình'
+    if (path.includes('warehouse')) return 'Quản lý kho Vật tư'
     if (path.includes('materials')) return 'Quản lý Vật tư'
     if (path.includes('workers')) return 'Danh sách thợ'
     if (path.includes('attendance')) return 'Bảng chấm công'

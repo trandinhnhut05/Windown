@@ -1,12 +1,25 @@
 package com.windown.common;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class ForwardController {
 
-    @RequestMapping(value = "{path:^(?!api|actuator|static|assets|.*\\.[a-zA-Z0-9]$).*$}**")
+    @GetMapping({
+        "/",
+        "/login",
+        "/dashboard",
+        "/projects/**",
+        "/workers/**",
+        "/attendance/**",
+        "/payroll/**",
+        "/finance/**",
+        "/schedule/**",
+        "/warranty/**",
+        "/warehouse/**",
+        "/settings/**"
+    })
     public String forward() {
         return "forward:/index.html";
     }
