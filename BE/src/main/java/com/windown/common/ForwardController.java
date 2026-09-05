@@ -8,6 +8,13 @@ public class ForwardController {
 
     @GetMapping({
         "/",
+        "/dich-vu",
+        "/san-pham",
+        "/du-an",
+        "/quy-trinh",
+        "/lien-he",
+        "/admin",
+        "/admin/**",
         "/login",
         "/dashboard",
         "/projects/**",

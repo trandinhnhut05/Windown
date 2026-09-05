@@ -1,0 +1,144 @@
+/* ============================================================
+   CƠ KHÍ TỔNG HỢP MẠNH NGHĨA WINDOW 2 — CLIENT STYLESHEET
+   Style: Industrial Premium · Modern Manufacturing · Luxury Construction
+   ============================================================ */
+
+.web-root {
+  --color-coal: #171A1D;
+  --color-dark: #0D0F11;
+  --color-surface: #1E2124;
+  --color-surface-hover: #252A2F;
+  --color-metal: #3F454A;
+  --color-light: #F5F5F5;
+  --color-accent: #F28C28;
+  --color-accent-hover: #FF9B38;
+  --color-border: rgba(217, 221, 224, 0.12);
+  --color-muted: #9CA3AF;
+
+  background-color: var(--color-coal);
+  color: var(--color-light);
+  font-family: 'Barlow', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.web-root h1,
+.web-root h2,
+.web-root h3,
+.web-root h4,
+.web-root h5,
+.web-root h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.web-root .font-display {
+  font-family: 'Barlow Condensed', sans-serif !important;
+}
+
+.web-root .font-body {
+  font-family: 'Barlow', sans-serif !important;
+}
+
+.web-root .font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Industrial Card with Sharp Edges & Bottom Accent Glow */
+.web-root .industrial-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.web-root .industrial-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(242, 140, 40, 0.5);
+  border-bottom: 3px solid var(--color-accent) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 20px -5px rgba(242, 140, 40, 0.35);
+}
+
+/* High-Conversion Molten Orange Button */
+.web-root .btn-accent {
+  background: linear-gradient(135deg, #F28C28 0%, #E67710 100%);
+  color: #0D0F11 !important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 20px rgba(242, 140, 40, 0.35);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.web-root .btn-accent:hover {
+  background: linear-gradient(135deg, #FF9D3B 0%, #F28C28 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(242, 140, 40, 0.55);
+}
+
+/* Outlined Metallic Button */
+.web-root .btn-outline {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-light);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(217, 221, 224, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+}
+
+.web-root .btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: rgba(242, 140, 40, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Scroll Fade Animation */
+.web-root .fade-up-element {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.web-root .fade-up-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .web-root .fade-up-element {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .web-root .industrial-card:hover {
+    transform: none !important;
+  }
+}

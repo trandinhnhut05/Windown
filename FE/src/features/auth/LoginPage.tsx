@@ -29,7 +29,7 @@ export default function LoginPage() {
     setServerError('')
     try {
       await login(data.username, data.password)
-      navigate('/dashboard')
+      navigate('/admin/dashboard')
     } catch (err: any) {
       setServerError(
         err?.response?.data?.message ?? 'Đăng nhập thất bại. Vui lòng thử lại.'

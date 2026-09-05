@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
 /* ============================================================
    Design Tokens
@@ -643,3 +644,133 @@ tbody td {
 @media (max-width: 480px) {
   .kpi-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   PHÂN HỆ KHÁCH HÀNG: CƠ KHÍ TỔNG HỢP MẠNH NGHĨA WINDOW 2
+   Industrial Design Tokens & Scoped Styles
+   ============================================================ */
+:root {
+  /* Customer portal tokens */
+  --color-coal: #171A1D;    /* 60% — Background chính */
+  --color-metal: #3F454A;   /* 10% — Surface cards */
+  --color-light: #F5F5F5;   /* 25% — Text chính */
+  --color-accent: #F28C28;  /* 5% — Cam điểm nhấn */
+  --color-border-ind: rgba(217, 221, 224, 0.12);
+  --color-muted-ind: #9CA3AF;
+  --color-surface-dark: #1E2124;
+  --color-dark: #0D0F11;
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.portal-root {
+  background-color: #171A1D;
+  color: #F5F5F5;
+  font-family: 'Barlow', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.portal-root h1,
+.portal-root h2,
+.portal-root h3,
+.portal-root h4,
+.portal-root h5,
+.portal-root h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.font-display { font-family: 'Barlow Condensed', sans-serif !important; }
+.font-body { font-family: 'Barlow', sans-serif !important; }
+.font-mono { font-family: 'JetBrains Mono', monospace !important; }
+
+.industrial-card {
+  background-color: #1E2124;
+  border: 1px solid rgba(217, 221, 224, 0.1);
+  border-radius: 0px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.industrial-card:hover {
+  transform: translateY(-6px);
+  border-bottom: 3px solid #F28C28 !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+.btn-accent {
+  background-color: #F28C28;
+  color: #171A1D;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(242, 140, 40, 0.3);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #ff9d3b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 140, 40, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #F5F5F5;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(217, 221, 224, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  border-color: #F28C28;
+  color: #F28C28;
+  background-color: rgba(242, 140, 40, 0.05);
+  transform: translateY(-2px);
+}
+
+.fade-up-element {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-up-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up-element {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .industrial-card:hover {
+    transform: none !important;
+  }
+}
+

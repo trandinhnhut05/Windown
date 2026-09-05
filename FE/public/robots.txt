@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /portal-admin/
+
+Sitemap: https://manhnghiawindow2.vn/sitemap.xml

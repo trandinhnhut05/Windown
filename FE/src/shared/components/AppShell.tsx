@@ -14,16 +14,17 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { to: '/dashboard', icon: <LayoutDashboard size={18} />, label: 'Tổng quan' },
-  { to: '/projects', icon: <Briefcase size={18} />, label: 'Công trình' },
-  { to: '/warehouse', icon: <Package size={18} />, label: 'Quản lý kho' },
-  { to: '/workers', icon: <Users size={18} />, label: 'Danh sách thợ' },
-  { to: '/attendance', icon: <CheckSquare size={18} />, label: 'Chấm công' },
-  { to: '/payroll', icon: <DollarSign size={18} />, label: 'Tính lương' },
-  { to: '/finance', icon: <TrendingUp size={18} />, label: 'Báo cáo tài chính' },
-  { to: '/schedule', icon: <Calendar size={18} />, label: 'Lịch nhắc việc' },
-  { to: '/warranty', icon: <Shield size={18} />, label: 'Bảo hành' },
-  { to: '/settings', icon: <Settings size={18} />, label: 'Thiết lập' },
+  { to: '/admin/dashboard', icon: <LayoutDashboard size={18} />, label: 'Tổng quan' },
+  { to: '/admin/quotes', icon: <Globe size={18} />, label: 'Báo giá Web' },
+  { to: '/admin/projects', icon: <Briefcase size={18} />, label: 'Công trình' },
+  { to: '/admin/warehouse', icon: <Package size={18} />, label: 'Quản lý kho' },
+  { to: '/admin/workers', icon: <Users size={18} />, label: 'Danh sách thợ' },
+  { to: '/admin/attendance', icon: <CheckSquare size={18} />, label: 'Chấm công' },
+  { to: '/admin/payroll', icon: <DollarSign size={18} />, label: 'Tính lương' },
+  { to: '/admin/finance', icon: <TrendingUp size={18} />, label: 'Báo cáo tài chính' },
+  { to: '/admin/schedule', icon: <Calendar size={18} />, label: 'Lịch nhắc việc' },
+  { to: '/admin/warranty', icon: <Shield size={18} />, label: 'Bảo hành' },
+  { to: '/admin/settings', icon: <Settings size={18} />, label: 'Thiết lập' },
 ]
 
 export default function AppShell() {
@@ -49,11 +50,12 @@ export default function AppShell() {
 
   const handleLogout = () => {
     logout()
-    navigate('/login')
+    navigate('/admin/login')
   }
 
   const getPageTitle = () => {
     const path = window.location.pathname
+    if (path.includes('quotes')) return 'Quản lý Yêu cầu Báo giá Website'
     if (path.includes('dashboard')) return 'Tổng quan'
     if (path.includes('projects')) return 'Quản lý Công trình'
     if (path.includes('warehouse')) return 'Quản lý kho Vật tư'
@@ -65,16 +67,27 @@ export default function AppShell() {
     if (path.includes('schedule')) return 'Lịch nhắc việc'
     if (path.includes('warranty')) return 'Bảo hành'
     if (path.includes('settings')) return 'Thiết lập & Sao lưu'
-    return 'Windown'
+    return 'Mạnh Nghĩa Window 2'
   }
 
   return (
     <div className="app-layout">
       {/* Sidebar */}
       <aside className="sidebar">
-        <div className="sidebar-logo">
-          <h1>🪟 Windown</h1>
-          <span>Quản lý Xưởng Nhôm Kính</span>
+        <div className="sidebar-logo" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '16px 14px' }}>
+          <img
+            src="/logo-company.jpg"
+            alt="Mạnh Nghĩa Window 2"
+            style={{ width: 38, height: 38, objectFit: 'contain', background: '#fff', borderRadius: 6, padding: 2 }}
+          />
+          <div>
+            <h1 style={{ fontSize: 14, fontWeight: 800, margin: 0, lineHeight: 1.2, color: '#fff' }}>
+              MẠNH NGHĨA
+            </h1>
+            <span style={{ fontSize: 10, color: '#F28C28', fontWeight: 700, letterSpacing: 0.5 }}>
+              WINDOW 2
+            </span>
+          </div>
         </div>
 
         <nav className="sidebar-nav">
@@ -87,7 +100,7 @@ export default function AppShell() {
             >
               {item.icon}
               <span style={{ flex: 1 }}>{item.label}</span>
-              {item.to === '/schedule' && pendingRemindersCount > 0 && (
+              {item.to.includes('schedule') && pendingRemindersCount > 0 && (
                 <span
                   style={{
                     background: 'var(--color-danger)',
