@@ -1,0 +1,10 @@
+# Dependencies & Temporary Files
+node_modules/
+scratch/
+antigravity-skills/
+.agents/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+*.log

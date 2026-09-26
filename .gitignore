@@ -11,6 +11,8 @@ $RECYCLE.BIN/
 .vscode/
 *.sublime-project
 *.sublime-workspace
+.agent/
+.agents/
 
 # Build/Package directories
 target/

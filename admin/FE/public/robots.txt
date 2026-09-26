@@ -1,0 +1,8 @@
+# robots.txt for Cơ Khí Tổng Hợp Mạnh Nghĩa Window 2
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /login
+
+Sitemap: https://manhnghiawindow2.vn/sitemap.xml

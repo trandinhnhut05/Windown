@@ -22,7 +22,7 @@ services:
 
   backend:
     build:
-      context: ./BE
+      context: ./admin/BE
       dockerfile: Dockerfile
     container_name: windown_backend
     depends_on:

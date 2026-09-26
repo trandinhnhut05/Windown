@@ -9,5 +9,5 @@ Write-Host "Backend running at: http://localhost:8080" -ForegroundColor Green
 Write-Host "Swagger UI: http://localhost:8080/swagger-ui.html" -ForegroundColor Green
 Write-Host ""
 
-Set-Location $PSScriptRoot\admin\BE
+Set-Location $PSScriptRoot\BE
 mvn spring-boot:run
