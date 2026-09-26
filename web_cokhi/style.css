@@ -2320,46 +2320,346 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .nav-hotline-compact { display: none; }
-  .services-grid, .product-grid, .process-grid, .contact-grid { grid-template-columns: 1fr; }
-  .metrics-grid { grid-template-columns: 1fr; }
+  /* 1. Base Font Scaling & Typography */
+  html {
+    font-size: 14.5px;
+  }
+
+  /* 2. Hidden elements on mobile (Những thứ không cần thiết) */
+  .top-bar,
+  .scroll-progress-bar,
+  #hero-sparks-canvas,
+  .btn-back-to-top,
+  .laser-divider,
+  .nav-hotline-compact {
+    display: none !important;
+  }
+
+  /* 3. Section Spacing */
+  section,
+  .about-section,
+  .services-section,
+  .gallery-section,
+  .process-section,
+  .calculator-section,
+  .faq-section,
+  .contact-section {
+    padding: 44px 0 !important;
+  }
+
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* 4. Section Titles & Subtitles */
+  .section-title-wrap {
+    margin-bottom: 26px !important;
+  }
+  .section-title {
+    font-size: 1.48rem !important;
+    line-height: 1.25 !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    letter-spacing: -0.3px !important;
+  }
+  .section-subtitle {
+    font-size: 0.85rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .badge-tech, .badge-blue {
+    padding: 4px 12px !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.4px !important;
+  }
+
+  /* 5. Hero Section */
+  .hero {
+    padding: 24px 0 36px 0 !important;
+    min-height: auto !important;
+  }
+  .hero-badge {
+    margin-bottom: 10px !important;
+    font-size: 0.68rem !important;
+    padding: 3px 10px !important;
+  }
+  .hero-title {
+    font-size: 1.55rem !important;
+    line-height: 1.22 !important;
+    margin-bottom: 12px !important;
+  }
+  .hero-desc {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 18px !important;
+  }
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .hero-buttons .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 11px 20px !important;
+    font-size: 0.88rem !important;
+  }
+
+  /* Compact Hero Trust Bar (2 Columns instead of 1 bulky column) */
+  .hero-trust-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    padding: 10px 12px !important;
+  }
+  .trust-item {
+    gap: 6px !important;
+  }
+  .trust-icon-box {
+    width: 26px !important;
+    height: 26px !important;
+    flex-shrink: 0 !important;
+  }
+  .trust-icon-box svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+  .trust-title {
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+  .trust-sub {
+    font-size: 0.65rem !important;
+  }
+
+  /* 6. Metrics Grid */
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
   .metric-item::after { display: none !important; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .hero-trust-bar { grid-template-columns: 1fr; }
-  .hero-buttons { flex-direction: column; align-items: stretch; }
-  .hero-buttons .btn { width: 100%; justify-content: center; }
-  .btn-load-more { width: 100%; max-width: 340px; padding: 13px 20px; }
+  .metric-number {
+    font-size: 1.85rem !important;
+  }
+  .metric-label {
+    font-size: 0.78rem !important;
+  }
+
+  /* 7. Services & About */
+  .services-grid, .product-grid, .process-grid, .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .service-card {
+    padding: 22px 18px !important;
+  }
+  .service-card h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 6px !important;
+  }
+  .service-desc {
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+  }
+  .service-features li {
+    font-size: 0.78rem !important;
+    gap: 6px !important;
+  }
+
+  .about-content h2 {
+    font-size: 1.45rem !important;
+  }
+  .about-lead {
+    font-size: 0.88rem !important;
+  }
+  .about-p {
+    font-size: 0.82rem !important;
+  }
+  .about-feature h4 {
+    font-size: 0.95rem !important;
+  }
+  .about-feature p {
+    font-size: 0.8rem !important;
+  }
+
+  /* 8. Filter Tabs (Horizontal Scroll on Mobile) */
+  .filter-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    padding: 2px 2px 10px 2px !important;
+    margin-bottom: 22px !important;
+    gap: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none !important; }
+  .filter-btn {
+    white-space: nowrap !important;
+    padding: 6px 14px !important;
+    font-size: 0.78rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 9. Product Card Text & Clamping */
+  .product-info {
+    padding: 16px 14px !important;
+  }
+  .product-info h4 {
+    font-size: 0.95rem !important;
+    margin-bottom: 4px !important;
+  }
+  .product-desc {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    margin-bottom: 8px !important;
+  }
+  .product-spec {
+    font-size: 0.72rem !important;
+  }
+  .btn-load-more {
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 11px 18px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* 10. Calculator Section */
+  .calc-card {
+    padding: 20px 16px !important;
+    gap: 20px !important;
+  }
+  .calc-form-group label {
+    font-size: 0.82rem !important;
+  }
+  .calc-select, .calc-input {
+    font-size: 0.82rem !important;
+    padding: 9px 12px !important;
+  }
+  .calc-summary-box {
+    padding: 18px 16px !important;
+  }
+  .calc-price-display {
+    padding: 12px !important;
+    margin: 14px 0 !important;
+  }
+  .calc-price-label {
+    font-size: 0.78rem !important;
+  }
+  .calc-price-val {
+    font-size: 1.6rem !important;
+  }
+
+  /* 11. FAQ & Contact & Footer */
+  .faq-header {
+    padding: 14px 16px !important;
+  }
+  .faq-question {
+    font-size: 0.88rem !important;
+  }
+  .faq-answer {
+    padding: 0 16px 16px 16px !important;
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .form-row { grid-template-columns: 1fr !important; }
+  .form-group label { font-size: 0.8rem !important; }
+  .form-input, .form-textarea { font-size: 0.82rem !important; padding: 10px 12px !important; }
+  .contact-info-card { padding: 22px 18px !important; }
+
+  .footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .footer { padding: 42px 0 24px 0 !important; }
+  .footer-col h4 { font-size: 0.95rem !important; margin-bottom: 12px !important; }
+  .footer-links a, .footer-contact-item { font-size: 0.8rem !important; }
+  .footer-bottom {
+    margin-top: 24px !important;
+    padding-top: 16px !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Floating Phone Widget */
+  .floating-contact-corner {
+    bottom: 20px !important;
+    right: 18px !important;
+  }
+  .btn-float-phone {
+    width: 48px !important;
+    height: 48px !important;
+  }
 
   /* Lightbox Mobile Layout */
-  .lightbox-modal { padding: 10px; }
-  .lightbox-container { max-height: 94vh; }
+  .lightbox-modal { padding: 8px !important; }
+  .lightbox-container { max-height: 94vh !important; }
   .lightbox-content {
-    grid-template-columns: 1fr;
-    max-height: 94vh;
-    overflow-y: auto;
+    grid-template-columns: 1fr !important;
+    max-height: 94vh !important;
+    overflow-y: auto !important;
   }
   .lightbox-image-wrap {
-    min-height: 250px;
-    max-height: 320px;
+    min-height: 220px !important;
+    max-height: 280px !important;
   }
   #lightbox-img {
-    max-height: 320px;
+    max-height: 280px !important;
   }
   .lightbox-info {
-    padding: 20px 18px;
+    padding: 16px 14px !important;
   }
-  .lightbox-nav {
-    width: 38px;
-    height: 38px;
-    top: 140px;
+  .lightbox-title { font-size: 1.05rem !important; }
+  .lightbox-desc { font-size: 0.8rem !important; }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13.8px;
   }
-  .lightbox-prev { left: 8px; }
-  .lightbox-next { right: 8px; }
-  .lightbox-title { font-size: 1.2rem; }
-  .faq-header { padding: 16px 18px; }
-  .faq-question { font-size: 0.95rem; }
-  .faq-answer { padding: 0 18px 18px 18px; font-size: 0.9rem; }
+  .header {
+    height: 60px !important;
+  }
+  .logo-title {
+    font-size: 1.05rem !important;
+  }
+  .logo-text-sub {
+    font-size: 0.62rem !important;
+  }
+  .logo-img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .hero-title {
+    font-size: 1.32rem !important;
+  }
+  .hero-desc {
+    font-size: 0.82rem !important;
+  }
+  .section-title {
+    font-size: 1.25rem !important;
+  }
+  .hero-trust-bar {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+    padding: 8px 10px !important;
+  }
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+  .metric-number {
+    font-size: 1.65rem !important;
+  }
+  .metric-label {
+    font-size: 0.74rem !important;
+  }
+  .floating-contact-corner {
+    bottom: 16px !important;
+    right: 14px !important;
+  }
 }
 
 /* ==========================================
