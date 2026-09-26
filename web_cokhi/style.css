@@ -570,15 +570,19 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.hero-title .title-row-white {
+.hero-title .title-dark {
   color: #0B2340;
   display: block;
 }
 
-.hero-title .title-row-brand {
+.hero-title .title-blue {
   color: var(--color-brand-blue);
   display: block;
   letter-spacing: -0.5px;
+}
+
+.hero-title .title-word {
+  display: inline;
 }
 
 .hero-desc {
@@ -700,6 +704,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #64748B;
   line-height: 1.25;
   white-space: nowrap;
+}
+
+.trust-chevron {
+  display: none;
+  align-items: center;
+  color: #94A3B8;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 /* ==========================================
@@ -2376,61 +2388,165 @@ h1, h2, h3, h4, h5, h6 {
 
   /* 5. Hero Section */
   .hero {
-    padding: 24px 0 36px 0 !important;
+    padding: 20px 0 28px 0 !important;
     min-height: auto !important;
+    background: #FFFFFF !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  .hero-bg img {
+    object-position: right top !important;
+    height: 100% !important;
+  }
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      #FFFFFF 0%,
+      #FFFFFF 36%,
+      rgba(255, 255, 255, 0.96) 54%,
+      rgba(255, 255, 255, 0.6) 72%,
+      rgba(255, 255, 255, 0.12) 88%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 180px,
+      rgba(255, 255, 255, 0.95) 240px,
+      #FFFFFF 280px,
+      #FFFFFF 100%
+    ) !important;
   }
   .hero-badge {
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
     font-size: 0.68rem !important;
-    padding: 3px 10px !important;
+    font-weight: 700 !important;
+    padding: 4px 12px !important;
+    background: #EFF6FF !important;
+    border: 1px solid #BFDBFE !important;
+    color: var(--color-brand-blue) !important;
+    border-radius: 9999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
   }
   .hero-title {
-    font-size: 1.55rem !important;
-    line-height: 1.22 !important;
-    margin-bottom: 12px !important;
+    font-size: 1.62rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 14px !important;
+  }
+  .hero-title .title-word {
+    display: block !important;
+  }
+  .hero-title .title-dark {
+    color: #0B2340 !important;
+  }
+  .hero-title .title-blue {
+    color: var(--color-brand-blue) !important;
   }
   .hero-desc {
     font-size: 0.84rem !important;
     line-height: 1.55 !important;
-    margin-bottom: 18px !important;
-  }
-  .hero-buttons {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 10px !important;
+    color: #334155 !important;
     margin-bottom: 20px !important;
   }
-  .hero-buttons .btn {
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    margin-bottom: 22px !important;
     width: 100% !important;
+  }
+  .hero-buttons .btn {
+    flex: 1 1 0% !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
-    padding: 11px 20px !important;
+    gap: 8px !important;
+    padding: 12px 10px !important;
     font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    white-space: nowrap !important;
+  }
+  .hero-buttons .btn-cta {
+    background: var(--color-brand-blue) !important;
+    color: #FFFFFF !important;
+    border: 1px solid var(--color-brand-blue) !important;
+    box-shadow: 0 4px 14px rgba(8, 102, 232, 0.35) !important;
+  }
+  .hero-buttons .btn-zalo-outline {
+    background: #FFFFFF !important;
+    color: var(--color-brand-blue) !important;
+    border: 1.5px solid var(--color-brand-blue) !important;
+    box-shadow: 0 2px 8px rgba(11, 35, 64, 0.04) !important;
   }
 
-  /* Compact Hero Trust Bar (2 Columns instead of 1 bulky column) */
+  /* Compact Hero Trust Bar (2x2 Grid chuẩn mockup) */
   .hero-trust-bar {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-    padding: 10px 12px !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
   }
   .trust-item {
-    gap: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    padding: 11px 9px !important;
+    box-shadow: 0 2px 8px rgba(11, 35, 64, 0.04) !important;
   }
   .trust-icon-box {
-    width: 26px !important;
-    height: 26px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px !important;
+    background: #EFF6FF !important;
+    border: 1px solid #DBEAFE !important;
+    color: var(--color-brand-blue) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     flex-shrink: 0 !important;
   }
   .trust-icon-box svg {
-    width: 13px !important;
-    height: 13px !important;
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .trust-text {
+    flex: 1 !important;
+    min-width: 0 !important;
   }
   .trust-title {
-    font-size: 0.75rem !important;
-    line-height: 1.2 !important;
+    font-size: 0.74rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
   }
-  .trust-sub {
-    font-size: 0.65rem !important;
+  .trust-desc {
+    font-size: 0.63rem !important;
+    color: #64748B !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    margin-top: 2px !important;
+  }
+  .trust-chevron {
+    display: flex !important;
+    align-items: center !important;
+    color: #94A3B8 !important;
+    flex-shrink: 0 !important;
+  }
+  .trust-chevron svg {
+    width: 14px !important;
+    height: 14px !important;
   }
 
   /* 6. Metrics Grid */
@@ -2585,12 +2701,14 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Floating Phone Widget */
   .floating-contact-corner {
-    bottom: 20px !important;
-    right: 18px !important;
+    bottom: 22px !important;
+    left: 20px !important;
+    right: auto !important;
   }
   .btn-float-phone {
-    width: 48px !important;
-    height: 48px !important;
+    width: 52px !important;
+    height: 52px !important;
+    box-shadow: 0 4px 16px rgba(8, 102, 232, 0.45) !important;
   }
 
   /* Lightbox Mobile Layout */
@@ -2633,9 +2751,23 @@ h1, h2, h3, h4, h5, h6 {
     height: 36px !important;
   }
   .hero-title {
-    font-size: 1.32rem !important;
+    font-size: 1.55rem !important;
+    line-height: 1.15 !important;
+  }
+  .hero-title .title-word {
+    display: block !important;
   }
   .hero-desc {
+    font-size: 0.82rem !important;
+  }
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+  }
+  .hero-buttons .btn {
+    flex: 1 1 0% !important;
+    padding: 11px 6px !important;
     font-size: 0.82rem !important;
   }
   .section-title {
@@ -2643,8 +2775,26 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero-trust-bar {
     grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+  .trust-item {
+    padding: 10px 8px !important;
     gap: 6px !important;
-    padding: 8px 10px !important;
+  }
+  .trust-icon-box {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .trust-icon-box svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .trust-title {
+    font-size: 0.72rem !important;
+  }
+  .trust-desc {
+    font-size: 0.6rem !important;
   }
   .metrics-grid {
     grid-template-columns: 1fr 1fr !important;
@@ -2657,8 +2807,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.74rem !important;
   }
   .floating-contact-corner {
-    bottom: 16px !important;
-    right: 14px !important;
+    bottom: 18px !important;
+    left: 16px !important;
+    right: auto !important;
+  }
+  .btn-float-phone {
+    width: 48px !important;
+    height: 48px !important;
   }
 }
 
