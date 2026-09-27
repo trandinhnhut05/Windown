@@ -562,10 +562,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 3.2vw, 2.85rem);
+  font-size: clamp(2.1rem, 3.4vw, 2.95rem);
   font-weight: 900;
-  line-height: 1.18;
-  letter-spacing: -0.5px;
+  line-height: 1.16;
+  letter-spacing: -0.6px;
   margin: 0 0 16px 0;
   text-transform: uppercase;
 }
@@ -576,9 +576,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title .title-blue {
-  color: var(--color-brand-blue);
+  color: #0066CC;
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
-  letter-spacing: -0.5px;
 }
 
 .hero-title .title-word {
@@ -586,10 +588,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-desc {
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   line-height: 1.68;
   color: #334155;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   max-width: 620px;
   background: transparent;
   border: none;
@@ -605,15 +607,20 @@ h1, h2, h3, h4, h5, h6 {
 .hero-buttons {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 28px;
+  gap: 14px;
+  margin-bottom: 30px;
 }
 
 .hero-buttons .btn {
-  padding: 11px 24px;
-  font-size: 0.92rem;
-  border-radius: 8px;
-  font-weight: 700;
+  padding: 12px 26px;
+  font-size: 0.94rem;
+  border-radius: 9px;
+  font-weight: 750;
+  letter-spacing: 0.2px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-arrow {
@@ -623,34 +630,51 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.2s ease;
 }
 
+.btn-cta {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px -2px rgba(0, 102, 204, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px -2px rgba(0, 102, 204, 0.58);
+  background: linear-gradient(135deg, #0073E6 0%, #0052A3 100%);
+}
+
 .btn-cta:hover .btn-arrow {
   transform: translateX(4px);
 }
 
 .btn-zalo-outline {
   background: #FFFFFF;
-  border: 1.5px solid var(--color-brand-blue);
-  color: var(--color-brand-blue) !important;
+  border: 1.5px solid #0068FF;
+  color: #0068FF !important;
+  box-shadow: 0 2px 10px rgba(0, 104, 255, 0.08);
 }
 
 .btn-zalo-outline svg {
-  color: var(--color-brand-blue);
+  color: #0068FF;
 }
 
 .btn-zalo-outline:hover {
-  background: #F0F6FF;
-  border-color: #0652BA;
-  color: #0652BA !important;
+  background: #F0F7FF;
+  border-color: #0050D8;
+  color: #0050D8 !important;
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 104, 255, 0.2);
 }
 
-/* Hero Trust Highlights Bar (4 thẻ ngang đều chuẩn mockup) */
+/* Hero Trust Highlights Bar (4 thẻ ngang đều sang trọng) */
 .hero-trust-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  max-width: 1080px;
-  margin-top: 0;
+  gap: 14px;
+  max-width: 1140px;
+  margin-top: 6px;
   padding-top: 0;
   border-top: none;
 }
@@ -658,52 +682,73 @@ h1, h2, h3, h4, h5, h6 {
 .trust-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 232, 240, 0.95);
-  padding: 8px 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: var(--transition-fast);
+  gap: 11px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(219, 234, 254, 0.85);
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(11, 35, 64, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  min-width: 0;
 }
 
 .trust-item:hover {
   background: #FFFFFF;
-  border-color: var(--color-brand-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(8, 102, 232, 0.12);
+  border-color: #93C5FD;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -4px rgba(8, 102, 232, 0.15);
 }
 
 .trust-icon-box {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  background: #EFF6FF;
-  border: 1px solid #DBEAFE;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  border: 1px solid #BFDBFE;
   color: var(--color-brand-blue);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.trust-item:hover .trust-icon-box {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: #FFFFFF;
+  border-color: #0066CC;
+  transform: scale(1.06);
+}
+
+.trust-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .trust-title {
   display: block;
-  font-size: 0.775rem;
-  font-weight: 700;
+  font-size: 0.8125rem;
+  font-weight: 750;
   color: #0F172A;
   line-height: 1.25;
+  margin-bottom: 2px;
   white-space: nowrap;
+  letter-spacing: -0.2px;
 }
 
 .trust-desc {
   display: block;
-  font-size: 0.69rem;
+  font-size: 0.70rem;
   color: #64748B;
   line-height: 1.25;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
 }
 
 .trust-chevron {
@@ -1858,90 +1903,7 @@ h1, h2, h3, h4, h5, h6 {
 .delay-5 { transition-delay: 0.5s; }
 .delay-6 { transition-delay: 0.6s; }
 
-/* Floating Contact Widget - DOCKED TO BOTTOM LEFT */
-.floating-contact-corner {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  z-index: 990;
-  display: flex;
-  align-items: center;
-}
 
-.btn-float-phone {
-  height: 46px;
-  border-radius: var(--radius-pill);
-  padding: 0 16px 0 12px;
-  background: var(--color-brand-blue);
-  color: #FFFFFF !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(8, 102, 232, 0.4);
-  position: relative;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  font-weight: 700;
-  font-size: 0.875rem;
-  letter-spacing: 0.3px;
-  text-decoration: none;
-}
-
-.btn-float-phone:hover {
-  transform: translateY(-2px);
-  background: var(--color-brand-blue-hover);
-  box-shadow: 0 8px 24px rgba(8, 102, 232, 0.55);
-}
-
-.btn-float-phone::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: var(--radius-pill);
-  border: 2px solid var(--color-brand-blue);
-  opacity: 0.75;
-  animation: pulse-ring 2.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-@keyframes pulse-ring {
-  0% { transform: scale(0.95); opacity: 0.85; }
-  100% { transform: scale(1.3); opacity: 0; }
-}
-
-.btn-back-to-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #FFFFFF;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-medium);
-  color: var(--color-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(12px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
-  z-index: 990;
-}
-
-.btn-back-to-top.visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.btn-back-to-top:hover {
-  background: var(--color-brand-blue);
-  border-color: var(--color-brand-blue);
-  color: #FFFFFF;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-blue);
-}
 
 /* Additional Layout & Utility Classes */
 .main-nav {
@@ -3505,49 +3467,125 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================
-   FLOATING ACTION BUTTONS (Phone Widget & Back To Top)
+   FLOATING ACTION BUTTONS (Desktop Floating Corner & Back To Top)
    ========================================== */
-.floating-contact-corner {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 999;
+.mobile-bottom-dock,
+.floating-mobile-actions {
+  display: none;
 }
 
+/* Desktop Floating Contact Corner - STRICTLY DOCKED TO BOTTOM RIGHT */
+.floating-contact-corner {
+  position: fixed !important;
+  right: 26px !important;
+  bottom: 26px !important;
+  left: auto !important;
+  top: auto !important;
+  width: auto !important;
+  max-width: max-content !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 14px !important;
+  z-index: 998 !important;
+  pointer-events: none !important;
+}
+
+.floating-contact-corner > a {
+  pointer-events: auto !important;
+}
+
+.btn-float-zalo,
 .btn-float-phone {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  background: var(--color-brand-blue);
-  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 22px rgba(8, 102, 232, 0.45);
   position: relative;
   text-decoration: none;
   cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+/* Zalo Floating Button */
+.btn-float-zalo {
+  background: linear-gradient(135deg, #0088FF 0%, #0060E6 100%);
+  box-shadow: 0 6px 20px rgba(0, 104, 255, 0.42), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-float-zalo:hover {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 10px 28px rgba(0, 104, 255, 0.6);
+}
+
+/* Hotline Phone Floating Button */
+.btn-float-phone {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.42), 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .btn-float-phone:hover {
-  background: var(--color-brand-blue-hover);
-  transform: scale(1.08);
-  box-shadow: 0 8px 28px rgba(8, 102, 232, 0.6);
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 10px 28px rgba(0, 102, 204, 0.6);
   color: #FFFFFF;
 }
 
+/* Tooltip hiển thị khi hover trên Desktop */
+.float-tooltip {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: rgba(11, 35, 64, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.float-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(11, 35, 64, 0.94);
+}
+
+.btn-float-zalo:hover .float-tooltip,
+.btn-float-phone:hover .float-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Ripple Pulse Rings for Phone */
 .phone-pulse-ring {
   position: absolute;
   inset: -6px;
-  border: 2px solid rgba(8, 102, 232, 0.65);
+  border: 2px solid rgba(0, 102, 204, 0.65);
   border-radius: 50%;
-  animation: pulse-ring-call 2.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation: pulse-ring-call 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
   pointer-events: none;
 }
 
 .phone-pulse-ring.delay {
-  animation-delay: 1.2s;
+  animation-delay: 1.1s;
 }
 
 @keyframes pulse-ring-call {
@@ -3561,14 +3599,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Back To Top Button - Nằm phía trên widget nổi, không bị đè */
 .btn-back-to-top {
-  position: fixed;
-  bottom: 92px;
-  right: 28px;
+  position: fixed !important;
+  bottom: 156px !important;
+  right: 26px !important;
+  left: auto !important;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
   color: var(--color-navy);
   border: 1px solid var(--border-medium);
   display: flex;
@@ -3576,10 +3617,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   box-shadow: 0 4px 14px rgba(11, 35, 64, 0.08);
   cursor: pointer;
-  z-index: 998;
+  z-index: 997;
   opacity: 0;
   pointer-events: none;
-  transition: var(--transition-normal);
+  transition: all 0.25s ease;
 }
 
 .btn-back-to-top.visible {
@@ -3592,44 +3633,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   border-color: var(--color-brand-blue);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(8, 102, 232, 0.25);
-}
-
-/* ==========================================
-   MOBILE BOTTOM DOCK & FLOATING ACTIONS (Zalo + CALL)
-   ========================================== */
-.mobile-bottom-dock,
-.floating-mobile-actions {
-  display: none;
-}
-
-/* Desktop Floating Contact Corner */
-.floating-contact-corner {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  z-index: 998;
-}
-
-.btn-float-zalo {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0088FF 0%, #0060E6 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 16px rgba(0, 104, 255, 0.4);
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.btn-float-zalo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 104, 255, 0.55);
+  box-shadow: 0 6px 18px rgba(8, 102, 232, 0.3);
 }
 
 @media (max-width: 768px) {
