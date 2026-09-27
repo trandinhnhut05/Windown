@@ -3596,11 +3596,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================
-   MOBILE BOTTOM DOCK & FLOATING CALL (Chuẩn Mockup Phone 1, 2, 3)
+   MOBILE BOTTOM DOCK & FLOATING ACTIONS (Zalo + CALL)
    ========================================== */
 .mobile-bottom-dock,
-.btn-floating-call {
+.floating-mobile-actions {
   display: none;
+}
+
+/* Desktop Floating Contact Corner */
+.floating-contact-corner {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 998;
+}
+
+.btn-float-zalo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0088FF 0%, #0060E6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 104, 255, 0.4);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-float-zalo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 104, 255, 0.55);
 }
 
 @media (max-width: 768px) {
@@ -3614,42 +3643,62 @@ h1, h2, h3, h4, h5, h6 {
 
   .btn-back-to-top {
     bottom: 78px !important;
-    right: 76px !important;
+    right: 70px !important;
   }
 
-  /* Floating Action Call Button (Phone 3 Mockup) */
-  .btn-floating-call {
+  /* Floating Mobile Actions (Zalo & CALL - Chuẩn Góc Dưới Điện Thoại) */
+  .floating-mobile-actions {
     display: flex !important;
     position: fixed !important;
     bottom: 74px !important;
-    right: 16px !important;
-    width: 52px !important;
-    height: 52px !important;
+    right: 14px !important;
+    flex-direction: column !important;
+    gap: 9px !important;
+    z-index: 998 !important;
+    align-items: center !important;
+  }
+
+  .btn-floating-action {
+    width: 48px !important;
+    height: 48px !important;
     border-radius: 50% !important;
-    background: #0066CC !important;
-    color: #FFFFFF !important;
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    box-shadow: 0 4px 14px rgba(0, 102, 204, 0.45) !important;
-    z-index: 998 !important;
     text-decoration: none !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    transition: transform 0.18s ease, box-shadow 0.18s ease !important;
   }
 
-  .btn-floating-call:active {
+  .btn-floating-action:active {
     transform: scale(0.92) !important;
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3) !important;
   }
 
-  .call-badge-text {
-    font-size: 9px !important;
+  /* Nút Zalo Nổi */
+  .btn-floating-zalo {
+    background: linear-gradient(135deg, #0088FF 0%, #0060E6 100%) !important;
+    box-shadow: 0 4px 14px rgba(0, 104, 255, 0.45) !important;
+  }
+
+  /* Nút CALL Nổi */
+  .btn-floating-call {
+    background: linear-gradient(135deg, #0066CC 0%, #004C99 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(0, 102, 204, 0.45) !important;
+  }
+
+  .action-badge-text {
+    font-size: 8.5px !important;
     font-weight: 800 !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.4px !important;
     margin-top: 1px !important;
     line-height: 1 !important;
     color: #FFFFFF !important;
     font-family: 'Outfit', sans-serif !important;
+  }
+
+  .footer-zalo-row {
+    color: #60A5FA !important;
   }
 
   /* Mobile Bottom Dock (Phone 1 & 2 Mockup: [ Tổng Chi Phí ] [ Gửi Yêu Cầu 📞 ]) */
