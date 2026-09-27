@@ -212,21 +212,27 @@ function initBackToTop() {
 /* 7. Mobile Menu Navigation */
 function initMobileMenu() {
   const toggleBtn = document.querySelector('.mobile-toggle');
+  const dockMenuBtn = document.getElementById('dock-menu-btn');
   const navMenu = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  if (!toggleBtn || !navMenu) return;
+  if (!navMenu) return;
 
-  toggleBtn.addEventListener('click', () => {
+  const toggle = () => {
     navMenu.classList.toggle('open');
     const isOpen = navMenu.classList.contains('open');
-    toggleBtn.setAttribute('aria-expanded', isOpen);
-  });
+    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', isOpen);
+    if (dockMenuBtn) dockMenuBtn.setAttribute('aria-expanded', isOpen);
+  };
+
+  if (toggleBtn) toggleBtn.addEventListener('click', toggle);
+  if (dockMenuBtn) dockMenuBtn.addEventListener('click', toggle);
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('open');
-      toggleBtn.setAttribute('aria-expanded', false);
+      if (toggleBtn) toggleBtn.setAttribute('aria-expanded', false);
+      if (dockMenuBtn) dockMenuBtn.setAttribute('aria-expanded', false);
     });
   });
 }
@@ -281,12 +287,14 @@ function initPortfolioFilter() {
   const showingCountEl = document.getElementById('gallery-showing-count');
   const totalCountEl = document.getElementById('gallery-total-count');
   const progressFill = document.getElementById('gallery-progress-fill');
+  const filterTabsContainer = document.querySelector('.filter-tabs');
 
-  const INITIAL_VISIBLE_COUNT = 8;
-  const BATCH_SIZE = 12;
+  // Trên mobile hiển thị 6 dự án ban đầu (3 hàng 2 cột), trên desktop hiển thị 8 dự án (2 hàng 4 cột)
+  const getInitialLimit = () => (window.innerWidth <= 768 ? 6 : 8);
+  const BATCH_SIZE = 8;
 
   let currentCategory = 'all';
-  let visibleCount = INITIAL_VISIBLE_COUNT;
+  let visibleCount = getInitialLimit();
 
   // Tự động tính toán số lượng chính xác cho từng tab bộ lọc từ danh mục thực tế
   filterBtns.forEach(btn => {
@@ -324,24 +332,26 @@ function initPortfolioFilter() {
     const totalMatching = matchingItems.length;
     const isAllShown = visibleCount >= totalMatching;
 
-    // 2. Ẩn tất cả sản phẩm
+    // 2. Ẩn tất cả sản phẩm bằng cả class is-hidden lẫn style.setProperty
     productItems.forEach(item => {
-      item.style.display = 'none';
+      item.classList.add('is-hidden');
+      item.style.setProperty('display', 'none', 'important');
     });
 
     // 3. Hiển thị các sản phẩm thỏa mãn bộ lọc trong giới hạn visibleCount
     matchingItems.forEach((item, index) => {
       if (index < visibleCount) {
-        item.style.display = 'flex';
+        item.classList.remove('is-hidden');
+        item.style.setProperty('display', 'flex', 'important');
 
         // Hiệu ứng mượt mà khi bấm nút "Xem thêm" mở rộng danh sách
         if (animateNew && index >= prevVisibleCount) {
           item.animate([
-            { opacity: 0, transform: 'translateY(22px) scale(0.96)' },
+            { opacity: 0, transform: 'translateY(18px) scale(0.97)' },
             { opacity: 1, transform: 'translateY(0) scale(1)' }
           ], {
-            duration: 360,
-            delay: (index - prevVisibleCount) * 45,
+            duration: 320,
+            delay: (index - prevVisibleCount) * 40,
             easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
             fill: 'both'
           });
@@ -362,18 +372,22 @@ function initPortfolioFilter() {
     // 5. Cập nhật trạng thái hiển thị của nút "Xem thêm"
     if (!loadMoreWrap || !loadMoreBtn) return;
 
-    if (totalMatching <= INITIAL_VISIBLE_COUNT) {
-      // Số lượng sản phẩm ít hơn hoặc bằng giới hạn hiển thị ban đầu -> Ẩn nút xem thêm
-      loadMoreWrap.style.display = 'none';
+    const initialLimit = getInitialLimit();
+
+    if (totalMatching <= initialLimit) {
+      // Số lượng sản phẩm ít hơn hoặc bằng giới hạn ban đầu -> Ẩn nút xem thêm
+      loadMoreWrap.classList.add('is-hidden');
+      loadMoreWrap.style.setProperty('display', 'none', 'important');
     } else {
-      loadMoreWrap.style.display = 'flex';
+      loadMoreWrap.classList.remove('is-hidden');
+      loadMoreWrap.style.setProperty('display', 'flex', 'important');
 
       if (isAllShown) {
         // Đã hiển thị toàn bộ -> chuyển sang trạng thái "Thu gọn danh sách"
         loadMoreBtn.classList.add('is-collapsed-state');
         loadMoreBtn.setAttribute('aria-expanded', 'true');
         if (loadMoreText) loadMoreText.textContent = 'Thu Gọn Danh Sách';
-        if (loadMoreBadge) loadMoreBadge.style.display = 'none';
+        if (loadMoreBadge) loadMoreBadge.style.setProperty('display', 'none', 'important');
         if (loadMoreArrow) {
           loadMoreArrow.style.transform = 'rotate(180deg)';
         }
@@ -385,7 +399,7 @@ function initPortfolioFilter() {
         if (loadMoreText) loadMoreText.textContent = 'Xem Thêm Công Trình';
         if (loadMoreBadge) {
           loadMoreBadge.textContent = `+${remaining}`;
-          loadMoreBadge.style.display = 'inline-flex';
+          loadMoreBadge.style.setProperty('display', 'inline-flex', 'important');
         }
         if (loadMoreArrow) {
           loadMoreArrow.style.transform = 'rotate(0deg)';
@@ -406,7 +420,7 @@ function initPortfolioFilter() {
 
       if (visibleCount >= totalMatching) {
         // Đang mở hết -> bấm để thu gọn lại số lượng ban đầu
-        visibleCount = INITIAL_VISIBLE_COUNT;
+        visibleCount = getInitialLimit();
         updateGalleryDisplay(false);
 
         // Cuộn mượt mà về đầu phần công trình tiêu biểu
@@ -431,15 +445,43 @@ function initPortfolioFilter() {
 
   // Sự kiện khi bấm các tab lọc phân loại
   filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
+      // Cuộn tab được bấm vào giữa thanh cuộn ngang để nhìn thấy trọn vẹn
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
       currentCategory = btn.getAttribute('data-filter') || 'all';
-      visibleCount = INITIAL_VISIBLE_COUNT; // Đặt lại số lượng hiển thị ban đầu khi đổi danh mục
+      visibleCount = getInitialLimit(); // Đặt lại số lượng hiển thị ban đầu khi đổi danh mục
       updateGalleryDisplay(false);
     });
   });
+
+  // Hỗ trợ kéo vuốt chuột mượt mà cho thanh tab danh mục (kéo thả tự nhiên trên màn hình)
+  if (filterTabsContainer) {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    filterTabsContainer.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - filterTabsContainer.offsetLeft;
+      scrollLeft = filterTabsContainer.scrollLeft;
+    });
+
+    filterTabsContainer.addEventListener('mouseleave', () => { isDown = false; });
+    filterTabsContainer.addEventListener('mouseup', () => { isDown = false; });
+
+    filterTabsContainer.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - filterTabsContainer.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      filterTabsContainer.scrollLeft = scrollLeft - walk;
+    });
+  }
 
   // Khởi tạo trạng thái ban đầu
   updateGalleryDisplay(false);
@@ -553,7 +595,7 @@ function initProjectLightbox() {
   let currentIndex = 0;
 
   function getVisibleItems() {
-    const visible = allItems.filter(item => item.style.display !== 'none');
+    const visible = allItems.filter(item => !item.classList.contains('is-hidden') && item.style.display !== 'none');
     return visible.length > 0 ? visible : allItems;
   }
 
