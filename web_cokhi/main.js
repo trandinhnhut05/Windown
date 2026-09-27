@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initPortfolioFilter();
   initQuoteCalculator();
   initFaqAccordion();
+  initFooterAccordion();
+  initMobileBottomDock();
   initContactForm();
   initProjectLightbox();
   initPolicyModals();
@@ -548,6 +550,54 @@ function initFaqAccordion() {
       }
     });
   });
+}
+
+/* 11.1 Footer Accordion (Mobile) */
+function initFooterAccordion() {
+  const footerCols = document.querySelectorAll('.footer-col');
+  footerCols.forEach(col => {
+    const headerBtn = col.querySelector('.footer-col-header');
+    if (!headerBtn) return;
+
+    headerBtn.addEventListener('click', () => {
+      if (window.innerWidth > 768) return;
+      const isActive = col.classList.contains('active');
+      footerCols.forEach(c => {
+        if (c !== col) {
+          c.classList.remove('active');
+          const btn = c.querySelector('.footer-col-header');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      col.classList.toggle('active', !isActive);
+      headerBtn.setAttribute('aria-expanded', !isActive ? 'true' : 'false');
+    });
+  });
+}
+
+/* 11.2 Mobile Bottom Dock Actions */
+function initMobileBottomDock() {
+  const calcBtn = document.getElementById('dock-btn-calc');
+  if (calcBtn) {
+    calcBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const calcSection = document.getElementById('calculator');
+      if (calcSection) {
+        calcSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  const quoteBtn = document.getElementById('dock-btn-quote');
+  if (quoteBtn) {
+    quoteBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 }
 
 /* 12. Contact Form Handling */
