@@ -117,7 +117,7 @@ export default function ReminderListPage() {
         <div>
           <h1 style={{ fontSize: 24, fontWeight: 800 }}>⏰ Lịch nhắc việc</h1>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 14, marginTop: 4 }}>
-            Theo dõi tiến độ, đo đạc kính, lắp đặt nhôm và thời gian liên hệ thu tiền khách hàng.
+            Theo dõi tiến độ, đo đạc, lắp đặt cơ khí và thời gian liên hệ thu tiền khách hàng.
           </p>
         </div>
         <button className="btn btn-primary" onClick={() => { setEditingReminder(null); setShowForm(true) }}>

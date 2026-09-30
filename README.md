@@ -1,6 +1,6 @@
-# Windown — Quản lý Xưởng Nhôm Kính
+# Windown — Quản lý Xưởng Cơ Khí
 
-Hệ thống quản lý toàn diện cho xưởng nhôm kính: công trình, vật tư, nhân công, chấm công.
+Hệ thống quản lý toàn diện cho xưởng cơ khí: công trình, vật tư, nhân công, chấm công.
 
 ## 🚀 Khởi chạy nhanh
 

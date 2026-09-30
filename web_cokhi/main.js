@@ -1,5 +1,5 @@
 /**
- * CƠ KHÍ - NHÔM KÍNH MẠNH NGHĨA WINDOW 2
+ * CƠ KHÍ MẠNH NGHĨA ĐÀ NẴNG
  * JavaScript Controller - Interactive Features, Calculator, Tech Sparks & Animations
  */
 
@@ -94,7 +94,7 @@ function initHeroSparksCanvas() {
       this.fade = Math.random() * 0.007 + 0.003;
       
       // Architectural Glass & Aluminum Precision Glint Palette (Soft Tech Blue, Sky Blue, White Shimmer)
-      const colors = ['#0866E8', '#38BDF8', '#60A5FA', '#93C5FD', '#FFFFFF'];
+      const colors = ['#FF6B00', '#FFAE00', '#FF4500', '#60A5FA', '#FFFFFF'];
       this.color = colors[Math.floor(Math.random() * colors.length)];
       this.alpha = Math.random() * 0.45 + 0.15;
       this.fade = Math.random() * 0.005 + 0.002;
@@ -500,7 +500,7 @@ function initQuoteCalculator() {
   if (!serviceSelect || !materialSelect || !quantityInput || !glassSelect || !priceDisplay) return;
 
   function calculateEstimate() {
-    const serviceRate = parseFloat(serviceSelect.value) || 1850000;
+    const serviceRate = parseFloat(serviceSelect.value) || 1350000;
     const materialMultiplier = parseFloat(materialSelect.value) || 1.0;
     const qty = Math.max(1, parseFloat(quantityInput.value) || 1);
     const glassMultiplier = parseFloat(glassSelect.value) || 1.0;
@@ -614,7 +614,7 @@ function initContactForm() {
     submitBtn.innerHTML = '<span>Đang gửi yêu cầu...</span>';
 
     setTimeout(() => {
-      alert('Cảm ơn Quý khách! Cơ Khí - Nhôm Kính Mạnh Nghĩa Window 2 đã nhận được yêu cầu. Chúng tôi sẽ liên hệ tư vấn và gửi báo giá qua số Hotline: 0704 682 789 - 0899 082 777!');
+      alert('Cảm ơn Quý khách! Cơ Khí Mạnh Nghĩa đã nhận được yêu cầu. Chúng tôi sẽ liên hệ tư vấn và gửi báo giá qua số Hotline: 0704 682 789 - 0899 082 777!');
       contactForm.reset();
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalText;

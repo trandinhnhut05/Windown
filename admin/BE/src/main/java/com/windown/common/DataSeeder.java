@@ -109,7 +109,7 @@ public class DataSeeder implements CommandLineRunner {
         List<Project> projects = new ArrayList<>();
         String[] customerNames = {"Nguyễn Văn An", "Trần Thị Bình", "Lê Văn Cường", "Phạm Minh Đức", "Hoàng Thu Thảo", "Vũ Hoàng Nam", "Ngô Quốc Bảo", "Đỗ Kim Liên", "Bùi Tiến Dũng", "Phan Thanh Hằng"};
         String[] addresses = {"123 Cầu Giấy, Hà Nội", "456 Đường Láng, Hà Nội", "789 Nguyễn Trãi, Hà Nội", "12 Lê Lợi, TP. HCM", "34 Trần Hưng Đạo, Đà Nẵng", "56 Nguyễn Văn Linh, Hải Phòng", "78 Lê Hồng Phong, Vinh", "90 Quang Trung, Cần Thơ", "101 Kim Mã, Hà Nội", "202 Giải Phóng, Hà Nội"};
-        String[] projectNames = {"Lắp đặt cửa nhôm kính biệt thự", "Thi công vách ngăn kính văn phòng", "Cửa sổ nhôm Xingfa chung cư", "Kính cường lực showroom", "Hệ mặt dựng kính tòa nhà", "Cửa đi nhôm kính cao cấp", "Tủ nhôm kính nhà bếp", "Cửa cuốn khe thoáng xưởng", "Cửa nhôm kính thủy lực", "Kính mái hiên nghệ thuật"};
+        String[] projectNames = {"Lắp đặt cổng sắt CNC biệt thự", "Thi công lan can cầu thang sắt mỹ thuật", "Cửa sắt hộp mạ kẽm nhà phố", "Kính cường lực showroom", "Khung thép mái kính tòa nhà", "Cửa sắt sơn tĩnh điện cao cấp", "Bàn ghế cơ khí nhà hàng", "Cửa cuốn khe thoáng xưởng", "Khung nhà thép tiền chế", "Mái kính hiên nghệ thuật"};
 
         LocalDate baseDate = LocalDate.now().minusMonths(6);
 
@@ -172,7 +172,7 @@ public class DataSeeder implements CommandLineRunner {
         // 4. Seed Material Templates (100 templates)
         log.info("Seeding 100 material templates...");
         List<MaterialTemplate> templates = new ArrayList<>();
-        String[] materialNames = {"Nhôm hộp Xingfa", "Nhôm thanh Xingfa", "Kính cường lực 10mm", "Kính dán an toàn 8.38mm", "Bản lề thủy lực", "Tay nắm cửa kính", "Keo silicone Apollo", "Gioăng cao su chống nước", "Vít tự khoan inox", "Khóa cửa nhôm"};
+        String[] materialNames = {"Sắt hộp mạ kẽm", "Thép tấm cắt CNC", "Kính cường lực 10mm", "Kính dán an toàn 8.38mm", "Bản lề cối chịu lực", "Tay nắm cửa inox", "Keo silicone Apollo", "Sơn tĩnh điện epoxy", "Vít tự khoan inox", "Khóa cổng thông minh"};
         String[] units = {"cây", "m²", "bộ", "chai", "cuộn", "hộp"};
 
         long existingTemplateCount = materialTemplateRepository.count();
@@ -292,7 +292,7 @@ public class DataSeeder implements CommandLineRunner {
         // 10. Seed Reminders (100 reminders)
         log.info("Seeding 100 reminders...");
         List<Reminder> reminders = new ArrayList<>();
-        String[] reminderTitles = {"Giao hàng và nghiệm thu công trình", "Thu tiền cọc đợt kế tiếp", "Kiểm tra chất lượng định kỳ", "Bảo trì định kỳ sau lắp đặt", "Họp công trình với thợ", "Mua bổ sung phụ kiện nhôm"};
+        String[] reminderTitles = {"Giao hàng và nghiệm thu công trình", "Thu tiền cọc đợt kế tiếp", "Kiểm tra chất lượng định kỳ", "Bảo trì định kỳ sau lắp đặt", "Họp công trình với thợ", "Mua bổ sung phụ kiện cơ khí"};
         for (int i = 0; i < 100; i++) {
             Project project = projects.get(random.nextInt(projects.size()));
             LocalDateTime remindTime = LocalDateTime.now().plusDays(random.nextInt(30)).plusHours(random.nextInt(24));

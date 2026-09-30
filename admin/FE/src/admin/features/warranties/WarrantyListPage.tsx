@@ -67,7 +67,7 @@ export default function WarrantyListPage() {
       <div>
         <h1 style={{ fontSize: 24, fontWeight: 800 }}>🛡️ Nhật ký bảo hành</h1>
         <p style={{ color: 'var(--color-text-muted)', fontSize: 14, marginTop: 4 }}>
-          Tổng hợp tất cả sự cố và lịch sử bảo hành, bảo trì cửa nhôm kính của toàn xưởng.
+          Tổng hợp tất cả sự cố và lịch sử bảo hành, bảo trì sản phẩm cơ khí của toàn xưởng.
         </p>
       </div>
 

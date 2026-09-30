@@ -149,7 +149,7 @@ export default function PayrollPrintModal({ payrollList, month, year, onClose }:
                   MẠNH NGHĨA WINDOW 2
                 </h2>
                 <span style={{ fontSize: 10, fontWeight: 700, color: '#475569', fontFamily: 'Arial, sans-serif' }}>
-                  GIẢI PHÁP CỬA NHÔM KÍNH CHUYÊN NGHIỆP
+                  GIẢI PHÁP CƠ KHÍ & SẮT MỸ THUẬT CHUYÊN NGHIỆP
                 </span>
               </div>
             </div>

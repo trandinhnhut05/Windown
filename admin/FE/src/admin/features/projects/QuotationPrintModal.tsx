@@ -191,7 +191,7 @@ export default function QuotationPrintModal({ project, onClose }: Props) {
                   MẠNH NGHĨA WINDOW 2
                 </h2>
                 <span style={{ fontSize: 11, fontWeight: 700, color: '#475569', fontFamily: 'Arial, sans-serif' }}>
-                  GIẢI PHÁP CỬA NHÔM KÍNH CHUYÊN NGHIỆP
+                  GIẢI PHÁP CƠ KHÍ & SẮT MỸ THUẬT CHUYÊN NGHIỆP
                 </span>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function QuotationPrintModal({ project, onClose }: Props) {
                   <td style={{ padding: '10px 8px', border: '1px solid #cbd5e1', fontWeight: 600 }}>
                     Thi công hệ cửa kính: {project.name}<br />
                     <span style={{ fontSize: 11, color: '#475569', fontWeight: 'normal' }}>
-                      (Kính cường lực, khung nhôm kính chịu lực chất lượng cao)
+                      (Sắt thép, inox, mái kính chịu lực chất lượng cao)
                     </span>
                   </td>
                   <td style={{ padding: '10px 8px', border: '1px solid #cbd5e1', textAlign: 'center' }}>{project.lengthM}</td>
@@ -377,7 +377,7 @@ export default function QuotationPrintModal({ project, onClose }: Props) {
             <h5 style={{ margin: '0 0 6px 0', fontSize: 13, color: '#1e3a8a', textTransform: 'uppercase', fontWeight: 'bold' }}>Ghi chú & Điều khoản chung:</h5>
             <ol style={{ paddingLeft: 18, margin: 0 }}>
               <li style={{ padding: '2px 0' }}>Báo giá trên đã bao gồm chi phí thiết kế bản vẽ kỹ thuật, vận chuyển và thi công trọn gói tại công trình.</li>
-              <li style={{ padding: '2px 0' }}>Sản phẩm được bảo hành chính hãng: khung nhôm bảo hành 05 năm; phụ kiện bảo hành 02 năm kể từ ngày ký bàn giao.</li>
+              <li style={{ padding: '2px 0' }}>Sản phẩm được bảo hành chính hãng: kết cấu cơ khí bảo hành 05 năm; phụ kiện bảo hành 02 năm kể từ ngày ký bàn giao.</li>
               <li style={{ padding: '2px 0' }}>Thời gian thi công hoàn thiện: dự kiến từ 07 - 12 ngày sau khi ký kết thống nhất bản vẽ và nhận đặt cọc.</li>
               <li style={{ padding: '2px 0' }}>Đơn giá này có hiệu lực trong vòng 30 ngày kể từ ngày lập bảng báo giá này.</li>
             </ol>

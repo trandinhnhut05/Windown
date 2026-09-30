@@ -160,7 +160,7 @@ export default function WarehousePage() {
             Quản lý Kho Vật tư
           </h2>
           <span style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>
-            Theo dõi tồn kho nhôm kính, phụ kiện, nhập xuất kho và cảnh báo thiếu hàng
+            Theo dõi tồn kho sắt thép, phụ kiện cơ khí, nhập xuất kho và cảnh báo thiếu hàng
           </span>
         </div>
 

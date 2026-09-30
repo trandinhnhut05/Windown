@@ -276,7 +276,7 @@ export default function WarehouseReceiptModal({ type, onSuccess, onClose }: Prop
                 <input
                   type="text"
                   className="form-input"
-                  placeholder={isImport ? 'VD: Đại lý nhôm Nam Hải...' : 'VD: Thợ lắp ráp, khách mua...'}
+                  placeholder={isImport ? 'VD: Đại lý sắt thép Hòa Phát...' : 'VD: Thợ lắp ráp, khách mua...'}
                   value={supplierOrRecipient}
                   onChange={(e) => setSupplierOrRecipient(e.target.value)}
                 />

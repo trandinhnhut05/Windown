@@ -61,7 +61,7 @@ export default function ProjectDrawingsTab({ projectId }: Props) {
         <div>
           <h3 style={{ fontSize: 16, fontWeight: 800 }}>🎨 Bản vẽ & Tài liệu kỹ thuật</h3>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 13, marginTop: 4 }}>
-            Đính kèm các bản vẽ mặt cắt nhôm, hình ảnh khảo sát hoặc tài liệu PDF kích thước thông thủy.
+            Đính kèm các bản vẽ thiết kế cơ khí, mặt cắt sắt thép hoặc tài liệu PDF kích thước công trình.
           </p>
         </div>
         <div>

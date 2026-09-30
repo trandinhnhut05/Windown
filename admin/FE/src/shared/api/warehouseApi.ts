@@ -11,7 +11,7 @@ export type ReceiptReason =
   | 'XUAT_KHAC'
 
 export const ITEM_CATEGORY_LABELS: Record<ItemCategory, string> = {
-  NHOM: 'Nhôm hệ',
+  NHOM: 'Sắt thép & Khung hệ',
   KINH: 'Kính các loại',
   PHU_KIEN: 'Phụ kiện kim khí',
   VAT_TU_PHU: 'Vật tư phụ',

@@ -37,18 +37,18 @@ const WORKSHOP_PRESETS: Array<{
   location?: string
   minStock?: number
 }> = [
-  { name: 'Nhôm Xingfa hệ 55 (Cây 5.8m)', category: 'NHOM', unit: 'cây', location: 'Kệ nhôm tầng 1', minStock: 10 },
-  { name: 'Nhôm Xingfa hệ 93 lùa (Cây 5.8m)', category: 'NHOM', unit: 'cây', location: 'Kệ nhôm tầng 2', minStock: 8 },
+  { name: 'Sắt hộp mạ kẽm 40x80 (Cây 6m)', category: 'NHOM', unit: 'cây', location: 'Kệ sắt tầng 1', minStock: 10 },
+  { name: 'Thép tấm cắt CNC hoa văn 5ly', category: 'NHOM', unit: 'tấm', location: 'Kệ thép tầng 2', minStock: 8 },
   { name: 'Kính dán an toàn 8.38mm (Trắng trong)', category: 'KINH', unit: 'm²', location: 'Kho kính đứng', minStock: 15 },
   { name: 'Kính cường lực 10mm', category: 'KINH', unit: 'm²', location: 'Kho kính đứng', minStock: 15 },
-  { name: 'Bản lề 3D Kinlong cửa đi', category: 'PHU_KIEN', unit: 'bộ', location: 'Tủ kim khí ngăn A1', minStock: 20 },
-  { name: 'Khóa tay gạt đa điểm Kinlong', category: 'PHU_KIEN', unit: 'bộ', location: 'Tủ kim khí ngăn A2', minStock: 10 },
+  { name: 'Bản lề cối chịu lực cửa sắt', category: 'PHU_KIEN', unit: 'bộ', location: 'Tủ kim khí ngăn A1', minStock: 20 },
+  { name: 'Khóa cửa cổng thông minh ngoài trời', category: 'PHU_KIEN', unit: 'bộ', location: 'Tủ kim khí ngăn A2', minStock: 10 },
   { name: 'Keo Silicone Apollo A500 (Trắng sữa)', category: 'VAT_TU_PHU', unit: 'chai', location: 'Kệ hóa chất', minStock: 24 },
-  { name: 'Gioăng cao su EPDM chèn cánh', category: 'VAT_TU_PHU', unit: 'cuộn', location: 'Khu phụ liệu', minStock: 5 },
+  { name: 'Sơn lót chống rỉ epoxy 2 thành phần', category: 'VAT_TU_PHU', unit: 'thùng', location: 'Khu sơn', minStock: 5 },
 ]
 
-const POPULAR_UNITS = ['cây', 'm²', 'bộ', 'chai', 'cuộn', 'kg', 'cái', 'thanh', 'hộp']
-const POPULAR_LOCATIONS = ['Kệ nhôm tầng 1', 'Kệ nhôm tầng 2', 'Kho kính đứng', 'Tủ phụ kiện A', 'Khu keo phụ liệu']
+const POPULAR_UNITS = ['cây', 'm²', 'bộ', 'chai', 'cuộn', 'kg', 'cái', 'thanh', 'hộp', 'tấm', 'thùng']
+const POPULAR_LOCATIONS = ['Kệ sắt tầng 1', 'Kệ sắt tầng 2', 'Kho kính đứng', 'Tủ phụ kiện A', 'Khu sơn']
 
 export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) {
   const isEdit = !!item
@@ -303,7 +303,7 @@ export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) 
                       fontSize: 14,
                       fontWeight: 500,
                     }}
-                    placeholder="Ví dụ: Nhôm Xingfa hệ 55 cây 5.8m, Kính dán an toàn 8.38mm..."
+                    placeholder="Ví dụ: Sắt hộp mạ kẽm 40x80, Thép tấm cắt CNC 5ly..."
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     autoFocus
@@ -316,7 +316,7 @@ export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) 
                   <div style={{ marginTop: 8 }}>
                     <div style={{ fontSize: 11.5, color: '#64748b', marginBottom: 5, display: 'flex', alignItems: 'center', gap: 4 }}>
                       <Sparkles size={13} color="#f59e0b" />
-                      <span>Gợi ý mẫu thông dụng xưởng nhôm kính:</span>
+                      <span>Gợi ý mẫu thông dụng xưởng cơ khí:</span>
                     </div>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                       {WORKSHOP_PRESETS.map((preset, idx) => (
@@ -414,7 +414,7 @@ export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) 
                         letterSpacing: '0.5px',
                         textTransform: 'uppercase',
                       }}
-                      placeholder="VD: NHOM-XF55, PK-001..."
+                      placeholder="VD: SAT-HOP-4080, PK-001..."
                       value={code}
                       onChange={(e) => setCode(e.target.value.toUpperCase())}
                     />
@@ -601,7 +601,7 @@ export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) 
                       borderColor: '#cbd5e1',
                       fontSize: 13,
                     }}
-                    placeholder="Ví dụ: Kệ nhôm tầng 1, Tủ phụ kiện ngăn B2, Kho kính ngoài..."
+                    placeholder="Ví dụ: Kệ sắt tầng 1, Tủ phụ kiện ngăn B2, Kho kính ngoài..."
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                   />
@@ -759,7 +759,7 @@ export default function WarehouseItemModal({ item, onSuccess, onClose }: Props) 
                   fontSize: 13,
                   resize: 'vertical',
                 }}
-                placeholder="Độ dày nhôm/kính, màu sắc (ghi, đen, xơ dừa), nhà cung cấp quen thuộc..."
+                placeholder="Độ dày sắt/thép, màu sắc (sơn tĩnh điện, mạ kẽm), nhà cung cấp quen thuộc..."
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
               />

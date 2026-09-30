@@ -94,7 +94,7 @@ export default function DashboardPage() {
     // Title
     doc.setFont('Helvetica', 'bold')
     doc.setFontSize(16)
-    doc.text('BAO CAO TAI CHINH - XUONG NHOM KINH WINDOWN', 20, 20)
+    doc.text('BAO CAO TAI CHINH - XUONG CO KHI WINDOWN', 20, 20)
 
     doc.setFontSize(10)
     doc.setFont('Helvetica', 'normal')

@@ -146,7 +146,7 @@ export default function ProjectFormModal({ project, onSuccess, onClose }: Props)
             {/* Tên công trình */}
             <div className="form-group">
               <label className="form-label">Tên / Mô tả công trình <span className="required">*</span></label>
-              <input {...register('name')} className={`form-input ${errors.name ? 'error' : ''}`} placeholder="Cửa nhôm kính hệ 55, mặt tiền 3 tầng" />
+              <input {...register('name')} className={`form-input ${errors.name ? 'error' : ''}`} placeholder="Cổng sắt CNC 4 cánh, mặt tiền 3 tầng" />
               {errors.name && <span className="form-error">{errors.name.message}</span>}
             </div>
 

@@ -16,7 +16,7 @@
     <artifactId>windown-be</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>windown-be</name>
-    <description>Windown - Hệ thống Quản lý Xưởng Nhôm Kính</description>
+    <description>Windown - Hệ thống Quản lý Xưởng Cơ Khí</description>
 
     <properties>
         <java.version>17</java.version>

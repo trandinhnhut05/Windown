@@ -1,10 +1,10 @@
-# Mạnh Nghĩa Window 2 - Website Cơ Khí & Nhôm Kính Đà Nẵng
+# Cơ Khí Mạnh Nghĩa - Website Cơ Khí Xây Dựng & Sắt Mỹ Thuật Đà Nẵng
 
-Trang web chính thức giới thiệu xưởng sản xuất, bảng giá và các dự án thi công của **Cơ Khí - Nhôm Kính Mạnh Nghĩa Window 2 Đà Nẵng**.
+Trang web chính thức giới thiệu xưởng sản xuất, bảng giá và các dự án thi công của **Cơ Khí Xây Dựng & Mỹ Thuật Mạnh Nghĩa Đà Nẵng**.
 
 ## 📌 Tính năng nổi bật
 - **Giới thiệu xưởng & hồ sơ năng lực**: Đội ngũ thợ cơ khí lành nghề, trang thiết bị máy móc hiện đại (CNC, máy cắt laser, máy phay).
-- **Danh mục sản phẩm & dịch vụ**: Cửa nhôm Xingfa nhập khẩu, nhôm Slim cao cấp, kính cường lực, cửa cuốn thông minh, cổng sắt CNC mỹ thuật, lan can, cầu thang, mái kính sân thượng.
+- **Danh mục sản phẩm & dịch vụ**: Cổng sắt CNC mỹ thuật, cửa sắt mạ kẽm sơn tĩnh điện, mái kính khung thép, lan can, cầu thang sắt mỹ thuật, cửa cuốn thông minh, cắt laser kim loại tấm & kết cấu nhà thép tiền chế.
 - **Thư viện dự án thực tế**: Tổng hợp hình ảnh các công trình hoàn thiện tại Đà Nẵng và khu vực lân cận.
 - **Công cụ tính báo giá**: Tiện ích dự toán chi phí trực quan, tư vấn nhanh qua Zalo / Hotline.
 - **Giao diện hiện đại & Responsive**: Tương thích mượt mà trên mọi thiết bị máy tính, máy tính bảng và điện thoại.

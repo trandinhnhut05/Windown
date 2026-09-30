@@ -43,7 +43,7 @@ export default function LoginPage() {
         <div className="login-logo">
           <div style={{ fontSize: 48, marginBottom: 8 }}>🪟</div>
           <h1>Windown</h1>
-          <p>Hệ thống quản lý xưởng nhôm kính</p>
+          <p>Hệ thống quản lý xưởng cơ khí</p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>

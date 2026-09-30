@@ -48,7 +48,7 @@ namespace ManhNghiaWindowInstaller
             };
             Label lblSubBanner = new Label()
             {
-                Text = "Phần mềm quản lý xưởng nhôm kính chuyên nghiệp",
+                Text = "Phần mềm quản lý xưởng cơ khí chuyên nghiệp",
                 ForeColor = Color.FromArgb(226, 232, 240),
                 Font = new Font("Segoe UI", 8.5F, FontStyle.Italic),
                 Location = new Point(16, 35),
