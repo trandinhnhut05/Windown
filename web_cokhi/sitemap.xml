@@ -3,128 +3,758 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://manhnghia2.vn/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/hero-craftsman-sparks.jpg</image:loc>
+      <image:title>Hình ảnh thợ hàn cơ khí gia công tia lửa điện tại xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Hình ảnh việc làm thực tế thợ cơ khí lành nghề hàn cắt kết cấu sắt thép với tia lửa điện công nghiệp tại xưởng Cơ Khí Mạnh Nghĩa Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/xuong-co-khi-manh-nghia-window.jpg</image:loc>
+      <image:title>Xưởng sản xuất và đội ngũ thợ cơ khí gia công chế tạo Mạnh Nghĩa Hòa Quý Đà Nẵng</image:title>
+      <image:caption>Toàn cảnh không khí việc làm thực tế thợ cơ khí gia công sản xuất cổng sắt CNC mỹ thuật và kết cấu thép tại Lô 51/B2-77 Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/mat-tien-xuong-manh-nghia-2.jpg</image:loc>
+      <image:title>Mặt tiền trụ sở xưởng Cơ Khí Xây Dựng Mạnh Nghĩa 2 Đà Nẵng</image:title>
+      <image:caption>Địa chỉ trụ sở xưởng sản xuất cơ khí Mạnh Nghĩa 2 tại Lô 51/B2-77 Hòa Quý, Ngũ Hành Sơn, TP. Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/kho-thep-hop-ma-kem.jpg</image:loc>
+      <image:title>Kho thép hộp mạ kẽm Hòa Phát nguyên kiện tại xưởng cơ khí Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Kho nguyên vật liệu thép hộp mạ kẽm và Inox chuẩn bị cho thợ cơ khí gia công theo yêu cầu tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/laser-cutting.jpg</image:loc>
+      <image:title>Cắt laser kim loại tấm cơ khí chính xác CNC Laser Fiber Đà Nẵng</image:title>
+      <image:caption>Gia công cắt laser fiber sắt tấm hoa văn nghệ thuật cơ khí chính xác theo yêu cầu tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/cnc-milling.jpg</image:loc>
+      <image:title>Chế tạo dầm kèo kết cấu thép và cơ khí xây dựng nhà tiền chế Đà Nẵng</image:title>
+      <image:caption>Thi công kết cấu khung thép nhà tiền chế, dầm giàn chịu lực và gác lửng cơ khí xây dựng tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/luxury-doors.jpg</image:loc>
+      <image:title>Cửa cổng sắt CNC mỹ thuật cao cấp mạ kẽm sơn tĩnh điện biệt thự Đà Nẵng</image:title>
+      <image:caption>Thi công cổng sắt CNC 4 cánh mạ kẽm sơn tĩnh điện biệt thự sang trọng tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/iron-gate-glass.jpg</image:loc>
+      <image:title>Mái kính nghệ thuật khung thép sảnh biệt thự và cổng sắt cơ khí Đà Nẵng</image:title>
+      <image:caption>Gia công lắp đặt mái sảnh kính cường lực kết hợp cổng sắt mỹ nghệ cao cấp tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/factory-facility.jpg</image:loc>
+      <image:title>Cửa cuốn khe thoáng thông minh công nghệ Đức Đà Nẵng</image:title>
+      <image:caption>Lắp đặt cửa cuốn nhôm khe thoáng tự động motor êm ái bảo hành chính hãng tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/precision-components.jpg</image:loc>
+      <image:title>Lan can kính cường lực và phụ kiện Inox 304 cơ khí Đà Nẵng</image:title>
+      <image:caption>Sản xuất thi công lan can kính ban công tay vịn Inox 304 chống rỉ sét tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
       <image:loc>https://manhnghia2.vn/assets/images/logo-sign-gold.png</image:loc>
       <image:title>Biển hiệu thương hiệu Cơ Khí Mạnh Nghĩa Đà Nẵng mạ vàng sang trọng</image:title>
-      <image:caption>Xưởng sản xuất cổng sắt CNC mỹ thuật, cửa sắt mạ kẽm, mái kính khung thép tại Đà Nẵng</image:caption>
+      <image:caption>Biển hiệu xưởng sản xuất cơ khí xây dựng và mỹ thuật Mạnh Nghĩa tại Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://manhnghia2.vn/assets/images/logo-manh-nghia.jpg</image:loc>
       <image:title>Logo Cơ Khí Xây Dựng và Mỹ Thuật Mạnh Nghĩa Đà Nẵng</image:title>
       <image:caption>Logo nhận diện thương hiệu Cơ Khí Mạnh Nghĩa Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/luxury-doors.jpg</image:loc>
-      <image:title>Cửa cổng sắt CNC mỹ thuật cao cấp Đà Nẵng</image:title>
-      <image:caption>Thi công cổng sắt CNC 4 cánh mạ kẽm sơn tĩnh điện biệt thự tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/iron-gate-glass.jpg</image:loc>
-      <image:title>Mái kính nghệ thuật khung thép và cổng sắt biệt thự Đà Nẵng</image:title>
-      <image:caption>Gia công lắp đặt mái sảnh kính cường lực kết hợp cổng sắt mỹ nghệ cao cấp Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/laser-cutting.jpg</image:loc>
-      <image:title>Cắt laser kim loại tấm cơ khí chính xác CNC Đà Nẵng</image:title>
-      <image:caption>Dịch vụ cắt laser hoa văn kim loại tấm, vách ngăn sắt CNC theo yêu cầu tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/factory-facility.jpg</image:loc>
-      <image:title>Cửa cuốn khe thoáng công nghệ Đức thông minh Đà Nẵng</image:title>
-      <image:caption>Lắp đặt cửa cuốn nhôm khe thoáng tự động bảo hành chính hãng tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/precision-components.jpg</image:loc>
-      <image:title>Lan can kính cường lực và phụ kiện inox cơ khí Đà Nẵng</image:title>
-      <image:caption>Sản xuất thi công lan can kính ban công tay vịn inox chống rỉ sét tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/cnc-milling.jpg</image:loc>
-      <image:title>Chế tạo cơ khí xây dựng dầm kèo kết cấu thép Đà Nẵng</image:title>
-      <image:caption>Thi công kết cấu khung thép nhà tiền chế, gác lửng, xưởng sản xuất cơ khí Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/xuong-co-khi-manh-nghia-window.jpg</image:loc>
-      <image:title>Xưởng sản xuất Cơ Khí Mạnh Nghĩa Window Hòa Quý Đà Nẵng</image:title>
-      <image:caption>Toàn cảnh máy móc và khu vực sản xuất sắt mỹ thuật Mạnh Nghĩa tại Hòa Quý Ngũ Hành Sơn</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/mat-tien-xuong-manh-nghia-2.jpg</image:loc>
-      <image:title>Mặt tiền xưởng Cơ Khí Xây Dựng Mạnh Nghĩa 2 Đà Nẵng</image:title>
-      <image:caption>Địa chỉ xưởng cơ khí Mạnh Nghĩa 2 tại Lô 51/B2-77 Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-thep-mai-che-san-thuong.jpg</image:loc>
-      <image:title>Khung thép mái che sân thượng kiên cố Hòa Xuân Đà Nẵng</image:title>
-      <image:caption>Gia công lắp đặt giàn thép hộp mạ kẽm chịu lực mái che sân thượng chống bão</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-gieng-troi-kinh-cuong-luc.jpg</image:loc>
-      <image:title>Khung giếng trời kính cường lực lấy sáng nhà phố Đà Nẵng</image:title>
-      <image:caption>Thi công khung giếng trời trượt tự động và cố định kính cường lực an toàn Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/lan-can-ban-cong-sat-son-tinh-dien.jpg</image:loc>
-      <image:title>Lan can ban công sắt sơn tĩnh điện mỹ thuật Đà Nẵng</image:title>
-      <image:caption>Mẫu lan can ban công sắt hộp mỹ nghệ sơn tĩnh điện chống rỉ sét bền màu tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/lan-can-sat-nghe-thuat-gac-lung.jpg</image:loc>
-      <image:title>Lan can sắt nghệ thuật gác lửng thẩm mỹ nhà phố Đà Nẵng</image:title>
-      <image:caption>Lan can sắt tạo điểm nhấn nội thất sang trọng cho gác lửng nhà phố Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/mai-kinh-pergola-san-thuong.jpg</image:loc>
-      <image:title>Mái kính pergola sân thượng khung thép nghệ thuật Đà Nẵng</image:title>
-      <image:caption>Thi công mái kính cường lực kết hợp pergola khung sắt trang trí sân vườn cafe Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/gian-hoa-pergola-khung-sat.jpg</image:loc>
-      <image:title>Giàn hoa pergola khung sắt hộp sân vườn biệt thự Đà Nẵng</image:title>
-      <image:caption>Mẫu giàn lam che nắng pergola sắt hộp sơn cao cấp ngoài trời tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/cau-thang-sat-xuong-ca-bac-go.jpg</image:loc>
-      <image:title>Cầu thang sắt xương cá bậc gỗ hiện đại Đà Nẵng</image:title>
-      <image:caption>Sản xuất lắp đặt kết cấu cầu thang xương cá đơn và đôi khung thép bậc gỗ lim Nam Phi Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/ket-cau-thep-cau-thang-san-lung.jpg</image:loc>
-      <image:title>Kết cấu thép cầu thang và sàn lửng nhà phố Đà Nẵng</image:title>
-      <image:caption>Gia công hệ khung dầm thép sàn lửng mở rộng diện tích bền chắc tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-bao-ve-cua-so-inox-304.jpg</image:loc>
-      <image:title>Khung bảo vệ cửa sổ Inox 304 và sắt chống trộm Đà Nẵng</image:title>
-      <image:caption>Gia công chấn hàn khung bảo vệ cửa sổ ban công sắt hộp và inox 304 kiên cố an toàn</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/cua-nhom-xingfa-kinh-cuong-luc.jpg</image:loc>
-      <image:title>Cửa nhôm Xingfa kính cường lực chính hãng Đà Nẵng</image:title>
-      <image:caption>Sản xuất cửa nhôm Xingfa tem đỏ nhập khẩu hệ 55 kính hộp cách âm tại Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/cua-truot-lua-nhom-kinh-cao-cap.jpg</image:loc>
-      <image:title>Cửa trượt lùa nhôm kính cao cấp Đà Nẵng</image:title>
-      <image:caption>Hệ cửa đi trượt lùa nhôm kính siêu êm tiết kiệm diện tích tối đa cho căn hộ Đà Nẵng</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/op-ton-chong-tham-nha-pho.jpg</image:loc>
-      <image:title>Ốp tôn chống thấm tường ngoài nhà phố Đà Nẵng</image:title>
-      <image:caption>Dịch vụ bắn tôn chống thấm tường biên nhà liền kề cam kết bảo hành chống thấm dột triệt để</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://manhnghia2.vn/assets/images/projects/thi-cong-op-ton-chong-tham.jpg</image:loc>
-      <image:title>Thi công ốp tôn chống thấm giáp ranh tường Đà Nẵng</image:title>
-      <image:caption>Đội ngũ thợ cơ khí chuyên nghiệp ốp tôn phẳng chống thấm khe lún nhà cao tầng Đà Nẵng</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307328_116383918611747622_3423380949103993401_8ea9b0c54c99d95c3e6f9f3c7d1dca55.jpg</image:loc>
-      <image:title>Cổng sắt hộp 4 cánh nan dọc sơn trắng hiện đại Thanh Khê Đà Nẵng</image:title>
-      <image:caption>Công trình thi công hoàn thiện cổng sắt hộp mạ kẽm sơn tĩnh điện trắng tại quận Thanh Khê Đà Nẵng</image:caption>
+      <image:title>Cổng Sắt Hộp 4 Cánh Nan Dọc Sơn Trắng Hiện Đại thi công tại Thanh Khê Đà Nẵng</image:title>
+      <image:caption>Gia công thi công hệ cổng sắt hộp 4 cánh nan dọc sơn màu trắng hiện đại, thiết kế thanh thoát trang nhã, kết hợp mái che bạt xếp sân trước che nắng mưa tiện lợi.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-gieng-troi-kinh-cuong-luc.jpg</image:loc>
+      <image:title>Khung thép mái che sân thượng kiên cố tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Thi công lắp dựng hệ khung thép hộp mạ kẽm chịu lực làm mái che sân thượng, giàn che nắng mưa kiên cố, chống gió giật và bảo vệ công trình bền vững trước thời tiết miền Trung.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/thi-cong-op-ton-chong-tham.jpg</image:loc>
+      <image:title>Thi công ốp tôn chống thấm tường ngoài nhà phố Đà Nẵng</image:title>
+      <image:caption>Dịch vụ mũi nhọn mùa mưa bão tại Đà Nẵng: Ốp tôn phẳng chống thấm tường hông nhà liền kề bằng tôn mạ màu Việt Nhật kết hợp khung xương thép hộp và vít bắn keo chống dột.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286722_116383918611747622_3423380949103993401_7ecf2f57b09a5817607ec974483ac7e9.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt CNC 4 Cánh Họa Tiết Tứ Quý Sơn Vàng Đồng thi công tại Nam Việt Á Đà Nẵng</image:title>
+      <image:caption>Bộ cửa cổng sắt CNC 4 cánh cắt laser hoa văn Tứ Quý Tùng Cúc Trúc Mai kết hợp chữ thư pháp may mắn, sơn tĩnh điện màu vàng đồng ánh kim quyền quý và bề thế.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286845_116383918611747622_3423380949103993401_f898a84f3c47bf24b105557833cc6245.jpg</image:loc>
+      <image:title>Cổng Sắt Hộp 4 Cánh Điểm Nhấn Mâm Tròn Mạ Vàng thi công tại Khuê Trung Đà Nẵng</image:title>
+      <image:caption>Hệ cổng sắt hộp mạ kẽm 4 cánh mặt tiền nhà phố, gắn phù điêu mâm tròn hoa văn cổ điển mạ vàng ở trung tâm, hàng chông giáo mạ vàng phía trên chống trộm kiên cố.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286672_116383918611747622_3423380949103993401_5a68ea7bb170acac6f60c3a5553a80b4.jpg</image:loc>
+      <image:title>Cổng Sắt CNC 4 Cánh Sơn Vàng Đồng Mặt Tiền Đá Marble thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Cổng sắt CNC tấm hoa văn mỹ thuật sơn vàng đồng sang trọng kết hợp 2 trụ ốp đá cẩm thạch vàng hoàng gia, thiết kế mở quay 4 cánh xếp gọn gàng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286690_116383918611747622_3423380949103993401_531bec7e6db183ecfbbc0ac5737c0e02.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Phối Màu Đen Trắng Hiện Đại thi công tại Liên Chiểu Đà Nẵng</image:title>
+      <image:caption>Cổng sắt hộp mạ kẽm thiết kế 4 cánh nan ngang thoáng gió, viền trang trí hình học sơn trắng nổi bật trên nền sơn đen mờ tĩnh điện chống rỉ sét.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307442_116383918611747622_3423380949103993401_bc7c137a916a1c1194501561fcc61371.jpg</image:loc>
+      <image:title>Tập kết thép hộp mạ kẽm Hòa Phát chuẩn bị sản xuất tại xưởng cơ khí Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Kho thép hộp mạ kẽm Hòa Phát nguyên đai nguyên kiện được tập kết sẵn sàng tại xưởng Mạnh Nghĩa để phục vụ các đơn hàng cơ khí, cửa cổng và khung mái cuối năm.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/mai-kinh-pergola-san-thuong.jpg</image:loc>
+      <image:title>Mái Che Kính Cường Lực Khung Thép Sân Thượng thi công tại Hòa Quý Đà Nẵng</image:title>
+      <image:caption>Gia công lắp dựng hệ mái che sân thượng bằng khung thép hộp sơn chống rỉ kết hợp kính cường lực lấy sáng tự nhiên và che mưa nắng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351609_116383918611747622_3423380949103993401_5322719021b672f624ea487a2d314fe3.jpg</image:loc>
+      <image:title>Ốp Tôn Chống Thấm Tường Đầu Hồi Khe Co Giãn Nhà Liền Kề thi công tại Hội An Đà Nẵng</image:title>
+      <image:caption>Xử lý triệt để khe hở tiếp giáp giữa 2 bức tường liền kề bằng máng tôn úp nóc bắn vít nở keo chuyên dụng, bảo vệ tường khỏi ẩm mốc rêu phong.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/cau-thang-sat-xuong-ca-bac-go.jpg</image:loc>
+      <image:title>Cầu thang sắt xương cá mặt gỗ tại Đà Nẵng</image:title>
+      <image:caption>Thi công cầu thang kết cấu sống lưng thép hộp sơn tĩnh điện đen mờ kết hợp mặt bậc gỗ tự nhiên dày 30mm và lan can sắt mỹ thuật tối giản.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307336_116383918611747622_3423380949103993401_046e13eed65b796385194ee42002628d.jpg</image:loc>
+      <image:title>Cổng Sắt Hộp 4 Cánh Hiện Đại Nan Ngang Sơn Đen Mờ thi công tại Liên Chiểu Đà Nẵng</image:title>
+      <image:caption>Thiết kế nan sắt hộp so le thông thoáng, chống trèo leo đột nhập, sơn tĩnh điện ngoài trời công nghệ sơn sần AkzoNobel chống bám bụi và xước.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-thep-mai-che-san-thuong.jpg</image:loc>
+      <image:title>Khung dầm thép mái che sân thượng biệt thự tại Đà Nẵng</image:title>
+      <image:caption>Hệ dầm thép hộp liên kết mạ kẽm nhúng nóng chịu gió bão ven biển, thiết kế kiên cố làm nền tảng cho mái kính hoặc mái che thông minh.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286899_116383918611747622_3423380949103993401_faa1d1ccbb831c0253046499870b0db0.jpg</image:loc>
+      <image:title>Thi công ốp tôn phẳng chống thấm tường hông nhà phố tại Đà Nẵng</image:title>
+      <image:caption>Ốp kín toàn bộ mảng tường hông tiếp giáp nhà bên cạnh bằng tôn mạ kẽm chống rỉ, bắn đinh vít gioăng cao su chống dột nước mưa ngấm vào kết cấu nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307351_116383918611747622_3423380949103993401_63b27cf374cd56b9eadb57518f6acb44.jpg</image:loc>
+      <image:title>Hàng Rào Sắt Mỹ Thuật Chông Giáo Chống Trộm Mạ Vàng thi công tại Mỹ Khê Đà Nẵng</image:title>
+      <image:caption>Hàng rào sắt hộp kiên cố đan mũi giáo nhọn mạ vàng trang nhã, bảo vệ an ninh tối đa cho biệt thự vườn và khuôn viên nhà ở.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/lan-can-ban-cong-sat-son-tinh-dien.jpg</image:loc>
+      <image:title>Giá treo áo quần Inox 304 cao cấp tại xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Gia công chế tạo giá treo áo quần, giàn phơi đa năng bằng Inox 304 sáng bóng, không bao giờ rỉ sét, kết cấu đầm chắc chịu gió giật và tích hợp thanh răng cưa chống xô bay đồ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/gian-hoa-pergola-khung-sat.jpg</image:loc>
+      <image:title>Giàn lam sắt pergola ô thoáng lấy sáng tại Đà Nẵng</image:title>
+      <image:caption>Thiết kế giàn lam che nắng sắt hộp phong cách kiến trúc xanh, kết hợp trang trí cây cảnh sân thượng và giếng trời lưu thông không khí.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/op-ton-chong-tham-nha-pho.jpg</image:loc>
+      <image:title>Hoàn thiện ốp tôn chống thấm tường liền kề nhà ống Đà Nẵng</image:title>
+      <image:caption>Bề mặt tường sau khi được bọc kín lớp tôn chống thấm phẳng phiu, có thang leo kỹ thuật kiểm tra và khung cửa sổ kiên cố, triệt tiêu 100% tình trạng ẩm mốc nứt nẻ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/lan-can-sat-nghe-thuat-gac-lung.jpg</image:loc>
+      <image:title>Lan can gác lửng sắt nghệ thuật bo cong mềm mại Đà Nẵng</image:title>
+      <image:caption>Mẫu lan can thông tầng uốn cong mềm mại, sắt đặc mỹ thuật sơn đen sần chống trầy xước, tạo điểm nhấn nghệ thuật ấn tượng cho không gian phòng khách.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/ket-cau-thep-cau-thang-san-lung.jpg</image:loc>
+      <image:title>Giàn phơi áo quần Inox 304 kiên cố gia công tại xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Gia công hoàn thiện giàn phơi đồ, giá treo áo quần Inox 304 ống dày kiên cố, chân đế chữ T vững chãi chống gió giật ngoài trời, tích hợp nan sóng giữ móc áo chống dạt.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307382_116383918611747622_3423380949103993401_b3da8c4d2283355d06c4a53af35ffbd1.jpg</image:loc>
+      <image:title>Cổng Sắt Cắt Laser CNC Hoa Văn Hình Học Hiện Đại thi công tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Hệ cổng sắt cắt laser CNC tấm thép hoa văn hình học tam giác độc đáo, sơn tĩnh điện màu đen mờ chống rỉ, mang đến diện mạo cá tính, hiện đại và thông thoáng cho ngôi nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/ket-cau-thep-mai-vom.jpg</image:loc>
+      <image:title>Khung Inox 304 Gia Cố Bảo Vệ Chân Bồn Nước Chịu Lực thi công tại Sơn Trà Đà Nẵng</image:title>
+      <image:caption>Gia công khung đỡ bồn nước bằng inox hộp 304 siêu bền, chống rỉ sét vĩnh viễn trong mọi điều kiện thời tiết khắc nghiệt trên mái.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-cau-thang-thep-hop.jpg</image:loc>
+      <image:title>Đội thợ lắp đặt khung cầu thang sắt hộp tại công trình Đà Nẵng</image:title>
+      <image:caption>Hình ảnh thực tế đội thợ Mạnh Nghĩa Window 2 tiến hành căn chỉnh cao độ bằng máy laser và hàn liên kết các đốt cầu thang sắt hộp chắc chắn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/khung-bao-ve-cua-so-inox-304.jpg</image:loc>
+      <image:title>Khung bảo vệ cửa sổ inox 304 chống trộm tại Đà Nẵng</image:title>
+      <image:caption>Gia công hoa sắt bảo vệ cửa sổ bằng vật liệu Inox 304 nguyên chất, sáng bóng vĩnh cửu, không bao giờ han rỉ trước thời tiết khắc nghiệt.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307398_116383918611747622_3423380949103993401_2b80c06c6a5d09ef9897205975f33eb4.jpg</image:loc>
+      <image:title>Cổng Sắt 4 Cánh Sơn Giả Gỗ Kết Hợp Nan Dọc Hiện Đại thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Thiết kế cổng sắt 4 cánh ấn tượng với 2 cánh giữa ốp thanh sắt sơn vân gỗ xương cá ấm cúng, kết hợp 2 cánh ngoài nan dọc đen mờ thông thoáng, bền bỉ trước thời tiết.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/ban-ghe-sat-nan-go-nhua.jpg</image:loc>
+      <image:title>Ghế sắt sơn tĩnh điện nan gỗ nhựa ngoài trời sản xuất tại xưởng Mạnh Nghĩa</image:title>
+      <image:caption>Bộ ghế sắt định hình khung hộp 30x30 sơn đen tĩnh điện kết hợp nan ngồi và lưng tựa bằng gỗ nhựa composite chịu nắng mưa ngoài trời cho cafe và resort.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307427_116383918611747622_3423380949103993401_2df1def3410800598819730974ee7310.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp Cắt CNC Kết Hợp Nan Gỗ Nhựa Mỹ Thuật thi công tại Sơn Trà Đà Nẵng</image:title>
+      <image:caption>Sản xuất và lắp đặt cửa cổng sắt hộp cắt hoa văn CNC hình học hiện đại kết hợp nan gỗ nhựa ngoài trời tạo điểm nhấn mặt tiền độc đáo.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307171_116383918611747622_3423380949103993401_b735b51528f1e026203d40e952e74955.jpg</image:loc>
+      <image:title>Giàn Lam Sắt Che Nắng Pergola Sân Vườn Biệt Thự thi công tại Hòa Quý Đà Nẵng</image:title>
+      <image:caption>Giàn lam sắt hộp sơn tĩnh điện đen kết hợp trồng dây leo phong cách kiến trúc xanh, tạo không gian thư giãn trà chiều thoáng đãng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286906_116383918611747622_3423380949103993401_1a6ee09a9f8cf49af4db4b7b62ad0d16.jpg</image:loc>
+      <image:title>Bọc tôn sóng mạ kẽm chống thấm vách tường nhà liền kề tại Đà Nẵng</image:title>
+      <image:caption>Thi công ốp tôn sóng mạ kẽm chống thấm toàn diện vách tường nhà liền kề, xử lý triệt để khe tiếp giáp ngăn chặn nước mưa ngấm gây ẩm mốc tường trong nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/gian-phoi-do-sat-son-tinh-dien.jpg</image:loc>
+      <image:title>Giàn phơi đồ đôi sắt sơn tĩnh điện kiên cố tại xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Giá phơi quần áo đôi cỡ lớn bằng thép dày hàn kiên cố, chân đế chắc chắn chống gió giật, uốn hoa văn cổ điển và tích hợp hàng khoen chống xô bay đồ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307456_116383918611747622_3423380949103993401_6546d25dee74974a77e7f4ba2f40d325.jpg</image:loc>
+      <image:title>Mái sắt che sân trước nhà phố tích hợp đèn chiếu sáng khung thép kiên cố Đà Nẵng</image:title>
+      <image:caption>Thi công kết cấu mái sắt hộp mạ kẽm che sân trước nhà phố kiên cố, lợp tôn cách nhiệt chống nóng kết hợp hệ thống đèn trần downlight âm trần thẩm mỹ và hiện đại.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307179_116383918611747622_3423380949103993401_af337509df2cd576b8b3a8640b853ddb.jpg</image:loc>
+      <image:title>Cầu thang sắt lên gác lửng kèm lan can tay vịn sơn đen hiện đại Đà Nẵng</image:title>
+      <image:caption>Thi công cầu thang sắt hộp mạ kẽm chịu lực thiết kế gọn gàng cho nhà phố gác lửng, lan can tay vịn 3 thanh ngang an toàn, sơn đen mờ chống gỉ bền bỉ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286913_116383918611747622_3423380949103993401_6b448d0e57f0764fd8720d0a450da564.jpg</image:loc>
+      <image:title>Ốp tôn chống thấm tường cao tầng phối màu trắng xanh chống dột Đà Nẵng</image:title>
+      <image:caption>Thợ chuyên nghiệp trực tiếp thi công ốp tôn chống thấm tường ngoài nhà cao tầng, phối sọc màu trắng - xanh thẩm mỹ, vít đệm cao su và keo chống thấm tuyệt đối.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351639_116383918611747622_3423380949103993401_930f29371569369d797578a5604e1727.jpg</image:loc>
+      <image:title>Khung kèo thép mái tôn sân thượng chống nóng chống bão tại Đà Nẵng</image:title>
+      <image:caption>Lắp dựng hệ khung dầm kèo thép hộp mạ kẽm chịu lực mái tôn sân thượng, che mưa chống nắng triệt để cho tầng thượng và bảo vệ công trình trước mùa mưa bão miền Trung.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307187_116383918611747622_3423380949103993401_9055870954b911e6b215ec2b011abe74.jpg</image:loc>
+      <image:title>Khung Kèo Thép Mái Tôn Lạnh Cách Nhiệt Chống Bão Cấp 12 thi công tại Cẩm Lệ Đà Nẵng</image:title>
+      <image:caption>Gia công hệ vì kèo thép hộp mạ kẽm kiên cố kết hợp tôn lạnh 3 lớp chống nóng, vít liên kết mạ kẽm nhúng nóng không lo gió bão lốc xoáy.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286920_116383918611747622_3423380949103993401_4be54bd99add6dd41785951410bbc9e4.jpg</image:loc>
+      <image:title>Hình ảnh thợ cơ khí gia công hàn ráp khung bàn ghế sắt hộp tại xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Trực tiếp đo đạc, cắt góc và hàn ráp hàng loạt bộ khung bàn ghế sắt hộp tĩnh điện cho quán cafe, nhà hàng bằng máy hàn bán tự động tại phân xưởng cơ khí.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286625_116383918611747622_3423380949103993401_db93d520926ca47a32f56264e3245ae1.jpg</image:loc>
+      <image:title>Bàn Trà Khung Sắt Hộp Sơn Tĩnh Điện Mặt Đá Marble Cao Cấp</image:title>
+      <image:caption>Gia công bàn trà sofa khung thép hộp uốn bo góc sơn tĩnh điện đen sần, tầng lửng đan nan sắt tiện ích, mặt ốp đá marble cẩm thạch sang trọng chống xước.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351682_116383918611747622_3423380949103993401_cde81dc4ceb274dbfb7b9905447ef991.jpg</image:loc>
+      <image:title>Cổng Sắt CNC Hoa Văn Cây Tùng Cổ Thụ Nghệ Thuật thi công tại Ngũ Hành Sơn Đà Nẵng</image:title>
+      <image:caption>Bức tranh phong cảnh cây Tùng cắt laser liền tấm trên nền thép SS400, tượng trưng cho sự trường thọ và kiên cường, phủ sơn bóng 2K ngoài trời.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307194_116383918611747622_3423380949103993401_667ac2c8d96898081325fe6fce52f8b5.jpg</image:loc>
+      <image:title>Mái Kính Sảnh Đón Biệt Thự Khung Thép Nghệ Thuật thi công tại Nam Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Mái sảnh kính uốn hoa văn sắt mỹ thuật đỡ kính cường lực dán film an toàn 2 lớp, tạo điểm nhấn chào đón bề thế sang trọng tại lối vào.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286928_116383918611747622_3423380949103993401_1e2583df0d66c484608ec96bb8352dfa.jpg</image:loc>
+      <image:title>Thợ cơ khí lắp ráp hoàn thiện xích đu sắt nghệ thuật sân vườn tại xưởng Đà Nẵng</image:title>
+      <image:caption>Sản phẩm xích đu sắt nghệ thuật ngoài trời khung thép dày chịu tải trọng 300kg, sơn tĩnh điện màu trắng và vàng rực rỡ, lắp ráp thử nghiệm êm ái trước khi xuất xưởng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286639_116383918611747622_3423380949103993401_f5c11ad76363a4d62d60f8b681802257.jpg</image:loc>
+      <image:title>Tập Kết Khung Bảo Vệ Sắt Mỹ Thuật &amp; Hoa Sắt Cửa Sổ Tại Công Trình</image:title>
+      <image:caption>Các bộ khung sắt bảo vệ cửa sổ hoa văn cổ điển và nan sắt hộp đã được bọc màng bảo vệ kỹ lưỡng, tập kết sẵn sàng lắp đặt hoàn thiện tại biệt thự.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307201_116383918611747622_3423380949103993401_48ea76a5edacccdd8f2aa5705a308181.jpg</image:loc>
+      <image:title>Mái Che Vòm Kính Cường Lực Sân Cà Phê Tầng Thượng thi công tại Sơn Trà Đà Nẵng</image:title>
+      <image:caption>Thi công mái vòm cong chịu lực phủ kính uốn nhiệt, liên kết ngàm chống rò rỉ nước mưa, tạo không gian check-in triệu view trên cao.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286936_116383918611747622_3423380949103993401_53412ce07976e409f31684ac2cb98c1f.jpg</image:loc>
+      <image:title>Việc làm thợ cơ khí bốc xếp sản phẩm cơ khí lên xe tải giao tận nơi khách hàng Đà Nẵng</image:title>
+      <image:caption>Khâu vận chuyển chuyên nghiệp: Toàn bộ cấu kiện cửa và sản phẩm cơ khí được chằng buộc, bọc màng bảo vệ cẩn thận trên xe tải xưởng để giao hàng tận công trình.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286651_116383918611747622_3423380949103993401_7d792bcd8baa317633377976ef1303d9.jpg</image:loc>
+      <image:title>Hàng Rào Sắt Hộp Mạ Kẽm Chông Giáo Mũi Nhọn Sơn Mạ Vàng</image:title>
+      <image:caption>Gia công hàng rào sắt hộp mạ kẽm kiên cố, đỉnh gắn hàng chông giáo mũi nhọn sơn mạ vàng chống trộm leo trèo tuyệt đối, sơn phủ epoxy chống rỉ sét.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307208_116383918611747622_3423380949103993401_1c247c4f23ecb34074e1ef2fc9dbe8ed.jpg</image:loc>
+      <image:title>Mái Che Bạt Xếp Lượn Sóng Di Động Khung Thép Sân Vườn thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Hệ mái bạt kéo xếp sóng thông minh khung thép hộp, bạt Myung Sung Hàn Quốc chống tia UV 99%, kéo thu vào êm nhẹ khi trời mát mẻ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286943_116383918611747622_3423380949103993401_64c3077c933eb3f45dee1c171b3cf5d4.jpg</image:loc>
+      <image:title>Cổng Sắt Hộp 4 Cánh Mở Quay Mặt Tiền Nhà Phố thi công tại Hội An Đà Nẵng</image:title>
+      <image:caption>Thi công lắp đặt trọn gói hệ cổng sắt hộp 4 cánh nan dọc kết hợp mái che mặt tiền nhà phố, sơn tĩnh điện chống rỉ sét, vận hành êm ái an toàn cho ngôi nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307215_116383918611747622_3423380949103993401_064d5360f9a3e57c32e65cee2d79a08f.jpg</image:loc>
+      <image:title>Giàn Sắt Hộp Đỡ Tấm Pin Năng Lượng Mặt Trời Trên Mái thi công tại Thanh Khê Đà Nẵng</image:title>
+      <image:caption>Khung giàn thép hộp mạ kẽm nhúng nóng thiết kế tính toán góc nghiêng tối ưu hấp thụ ánh nắng, chịu gió bão miền Trung an toàn 25 năm.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286951_116383918611747622_3423380949103993401_5cc2d230134ecd7165dca004cbbf3b6a.jpg</image:loc>
+      <image:title>Cửa Sắt Xếp Kéo Đài Loan Sơn Tĩnh Điện Cao Cấp thi công tại Nam Việt Á Đà Nẵng</image:title>
+      <image:caption>Thi công lắp đặt hệ cửa kéo sắt Đài Loan nhíp đặc dập hoa văn thanh thoát, ray máng trượt bạc đạn Nhật Bản kéo mở êm nhẹ, bền bỉ và an toàn tuyệt đối.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307390_116383918611747622_3423380949103993401_d0fdd73b4c41b837b505f345609d225f.jpg</image:loc>
+      <image:title>Chuồng Cọp Khung Sắt Bảo Vệ Ban Công Chống Trộm thi công tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Gia công lắp đặt lồng sắt chuồng cọp ban công nhà phố, tích hợp cửa thoát hiểm thoát nạn theo tiêu chuẩn an toàn PCCC khi khẩn cấp.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307224_116383918611747622_3423380949103993401_c308a825f91d4c8b0763e7b282dd4287.jpg</image:loc>
+      <image:title>Mái Kính Ban Công Biệt Thự Chống Nắng Cản Tia Cực Tím thi công tại Liên Chiểu Đà Nẵng</image:title>
+      <image:caption>Sử dụng kính Solar Control cản nhiệt màu xanh biển dịu mát, ngăn chặn 70% nhiệt lượng mặt trời chiếu vào ban công mà vẫn giữ độ sáng trong lành.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286958_116383918611747622_3423380949103993401_93cb465d693db51ff0d6d7344a31216d.jpg</image:loc>
+      <image:title>Cổng Sắt CNC 4 Cánh Phù Điêu Mâm Tròn Mạ Vàng thi công tại Khuê Trung Đà Nẵng</image:title>
+      <image:caption>Thi công lắp đặt cổng sắt CNC 4 cánh họa tiết phù điêu mâm tròn mạ vàng sang trọng, sơn tĩnh điện cao cấp cho biệt thự phố.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307405_116383918611747622_3423380949103993401_067641380f5d949f8449728d2d98a0f4.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt 4 Cánh Sơn Tĩnh Điện Nan Thưa Phối Gỗ Hiện Đại thi công tại Ngũ Hành Sơn Đà Nẵng</image:title>
+      <image:caption>Gia công lắp đặt cổng sắt hộp 4 cánh nan dọc thông thoáng phối cánh ốp gỗ điểm nhấn, thiết kế đồng bộ với ban công và mái hiên nhà phố.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307231_116383918611747622_3423380949103993401_ad78b9ee3700b46a38c1a0ddaa44b723.jpg</image:loc>
+      <image:title>Khung Giàn Thép Mái Ngói Biệt Thự Hiện Đại Siêu Nhẹ thi công tại Hòa Vang Đà Nẵng</image:title>
+      <image:caption>Khung kèo thép mạ kẽm siêu nhẹ chống rỉ sét vĩnh cửu, thi công lợp ngói phẳng phong cách hiện đại không võng xệ mái.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286966_116383918611747622_3423380949103993401_6e4c1bfa7882301c32e72a66841e3273.jpg</image:loc>
+      <image:title>Thi Công Lắp Đặt Cửa Cổng Sắt Hộp Trực Tiếp Tại Công Trình An Hải Bắc Đà Nẵng</image:title>
+      <image:caption>Thợ cơ khí Mạnh Nghĩa trực tiếp lắp dựng, căn chỉnh bản lề và bóc màng bọc bảo vệ hoàn thiện hệ cửa cổng sắt hộp và khung rào nan dọc tại công trình.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307412_116383918611747622_3423380949103993401_28ec27a16b7ee4a917df50302a471ee1.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt CNC 2 Cánh Kèm Mái Bạt Xếp Lượn Sóng thi công tại Cẩm Lệ Đà Nẵng</image:title>
+      <image:caption>Hệ thống cửa cổng sắt 2 cánh cắt hoa văn CNC laser tinh xảo phối màu vân gỗ, phía trên tích hợp mái bạt xếp kéo lượn sóng che mát lối vào.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307239_116383918611747622_3423380949103993401_bb98046aefe872f0d960a44f7377561e.jpg</image:loc>
+      <image:title>Cầu thang sắt hộp bậc thép gân chống trượt ngoài trời nhà cao tầng Đà Nẵng</image:title>
+      <image:caption>Gia công lắp đặt cầu thang sắt hộp mạ kẽm mặt bậc bằng thép tấm dập gân nhám chống trơn trượt hiệu quả, lan can sắt vững chãi bảo vệ an toàn khi lên xuống.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286973_116383918611747622_3423380949103993401_6e073cb85db9789d228cf0f97ec1f2ed.jpg</image:loc>
+      <image:title>Cổng Sắt 2 Cánh Nan Chớp Sơn Trắng Đen Hiện Đại thi công tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Thiết kế và gia công cổng sắt hộp 2 cánh nan chớp thông thoáng, phối 2 màu trắng - đen hiện đại chống rỉ sét bền đẹp.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286698_116383918611747622_3423380949103993401_cd1b627cd412133ba988ff5c0b318396.jpg</image:loc>
+      <image:title>Cửa cổng sắt hộp 4 cánh sơn trắng nan dọc chống gỉ mạ kẽm Đà Nẵng</image:title>
+      <image:caption>Bộ cửa cổng sắt hộp mạ kẽm sơn tĩnh điện màu trắng sứ nan dọc thanh thoát, thanh chốt kiên cố và phủ bóng chống oxy hóa rỉ sét trước nắng mưa miền Trung.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307419_116383918611747622_3423380949103993401_830f5fcd58c0b7a48711b3b493f8a678.jpg</image:loc>
+      <image:title>Cổng Sắt Hộp 4 Cánh Phối Chi Tiết Sơn Giả Gỗ Hiện Đại thi công tại Nam Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Mẫu cổng sắt hộp 4 cánh sơn màu xám ghi hiện đại, kết hợp các mảng tấm sắt sơn vân gỗ tự nhiên tạo điểm nhấn sang trọng, ấm cúng và chống chịu thời tiết bền bỉ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307246_116383918611747622_3423380949103993401_cd0dac7d64cfa20a087d2cd75588aefc.jpg</image:loc>
+      <image:title>Mái Hiên Kính Cường Lực Treo Dây Cáp Inox Chịu Lực thi công tại Hội An Đà Nẵng</image:title>
+      <image:caption>Thiết kế mái đón cửa sổ hiện đại dùng ty ren inox 304 kéo treo từ trên tường xuống, không cần cột chống phía dưới giải phóng hoàn toàn lối đi.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286980_116383918611747622_3423380949103993401_aafe801f6c5a5a850f3eabf9f537b3fa.jpg</image:loc>
+      <image:title>Lan Can Kính Cầu Thang Tay Vịnh Inox 304 Vuông thi công tại Hòa Quý Đà Nẵng</image:title>
+      <image:caption>Hệ lan can cầu thang trong nhà kết hợp kính cường lực an toàn và tay vịn Inox 304 xước mờ hiện đại, sạch bóng vĩnh viễn không bám bụi.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286706_116383918611747622_3423380949103993401_a7db599f34b6ddf33e4e4f69d095df19.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Nan Chéo Cách Điệu Hiện Đại</image:title>
+      <image:caption>Mẫu cổng sắt hộp 4 cánh thiết kế ô nan chéo hình học độc đáo, phối màu sơn tĩnh điện xám ghi và trắng tinh tế, tay nắm hộp dày dặn và bản lề cối êm ái.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307434_116383918611747622_3423380949103993401_08edec36e362af0f7dabb3a54d9db215.jpg</image:loc>
+      <image:title>Bảo Trì Sơn Sửa Hệ Thống Cầu Thang Sắt Thoát Hiểm Ngoài Trời thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Dịch vụ kiểm tra kết cấu, đánh rỉ và sơn phủ bảo dưỡng chống ăn mòn cho hệ thống cầu thang thoát hiểm ngoài trời nhà cao tầng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307253_116383918611747622_3423380949103993401_9456f6ebfd1ec22e03738148eae764fd.jpg</image:loc>
+      <image:title>Giàn Lam Sắt Hộp Che Mưa Cầu Thang Ngoài Trời thi công tại Nam Việt Á Đà Nẵng</image:title>
+      <image:caption>Hệ lam hộp mạ kẽm đan kín kết hợp tấm lợp lấy sáng polycarbonate đặc ruột, bảo vệ lối cầu thang bộ ngoài trời luôn khô ráo an toàn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286988_116383918611747622_3423380949103993401_71ec9c1d8ffaa54f352bebbfd80ab20b.jpg</image:loc>
+      <image:title>Thi Công Trọn Gói Từ A-Z Nhà Xưởng Thép Hộp &amp; Tôn Sóng thi công tại Ngũ Hành Sơn Đà Nẵng</image:title>
+      <image:caption>Thi công hoàn thiện từ phần khung sắt hộp chịu lực, lợp mái tôn sóng đến vách bao che kiên cố cho nhà kho xưởng tiêu chuẩn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286714_116383918611747622_3423380949103993401_5a0c710b96354d89dbc79b396a03f18a.jpg</image:loc>
+      <image:title>Cửa cổng sắt hộp nan dọc sơn màu ghi xám sang trọng hiện đại Đà Nẵng</image:title>
+      <image:caption>Mẫu cửa cổng sắt hộp nan dọc hiện đại sơn tĩnh điện màu xám ghi AkzoNobel cao cấp, trụ cổng kiên cố, bản lề mở 4 cánh thu gọn tối đa diện tích lối vào.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351580_116383918611747622_3423380949103993401_a85b4e6b89050980316bd7fc6cea6b76.jpg</image:loc>
+      <image:title>Thi Công Ốp Tôn Chống Thấm Tường Hông Toàn Diện Nhà Cao Tầng thi công tại Mỹ Khê Đà Nẵng</image:title>
+      <image:caption>Giải pháp chống thấm tường ngoài triệt để bằng tôn sóng mạ kẽm cao cấp, thợ đu dây thi công giáp mí chuyên nghiệp chống dột mùa mưa bão.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307261_116383918611747622_3423380949103993401_6f12a7ecab1e67cded8b473d64e326f4.jpg</image:loc>
+      <image:title>Mái Kính Lối Đi Sân Vườn Resort Khung Thép Thấp thi công tại Khuê Trung Đà Nẵng</image:title>
+      <image:caption>Lối đi dạo có mái che kính trong suốt hòa mình vào thiên nhiên, khung thép sơn màu xanh rêu ăn nhập hoàn hảo với cảnh quan sân vườn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286730_116383918611747622_3423380949103993401_4467f9934d0f9548ac9341c6d000ade5.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Đi Kèm Khung Vòm Mỹ Thuật</image:title>
+      <image:caption>Thi công trọn gói bộ cổng sắt hộp 4 cánh nan ngang màu đen viền đồng, kết hợp mái vòm sắt uốn nghệ thuật bắc ngang qua 2 trụ cổng tạo điểm nhấn kiến trúc bề thế.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351625_116383918611747622_3423380949103993401_a0f8d5a8dc7363a6b6ff2a51366679d0.jpg</image:loc>
+      <image:title>Cầu thang sắt ngoài trời kèm chiếu nghỉ và lan can bảo vệ kiên cố Đà Nẵng</image:title>
+      <image:caption>Thi công cầu thang sắt hộp mạ kẽm ngoài trời dẫn lên tầng lửng, bậc sắt gân chống trượt, chiếu nghỉ rộng rãi và hệ lan can song đứng an toàn tuyệt đối.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307268_116383918611747622_3423380949103993401_6e5017bd5e5ebf2fd379b5d0a2ae6631.jpg</image:loc>
+      <image:title>Thợ cơ khí gia công bàn ghế khung sắt cho chuỗi quán cafe lounge tại xưởng Đà Nẵng</image:title>
+      <image:caption>Mạnh Nghĩa trực tiếp nhận sản xuất trọn gói bàn ghế khung sắt hộp sơn tĩnh điện phong cách industrial hiện đại cho các quán cafe, pub, nhà hàng tại Đà Nẵng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286738_116383918611747622_3423380949103993401_360de32338534eda80d0dcde7cb46470.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 2 Cánh Sơn Trắng Nan Dọc Kiên Cố</image:title>
+      <image:caption>Cổng sắt hộp mạ kẽm 2 cánh mở quay nan sọc thoáng khí, điểm xuyết ô vuông cân đối ở tâm cánh, sơn tĩnh điện màu trắng sứ sang trọng chống gỉ sét.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351652_116383918611747622_3423380949103993401_1a6d1c8578dd99266a818e4ab68fea28.jpg</image:loc>
+      <image:title>Gia Công Đan Lưới Hệ Khung Thép Chịu Lực Tại Xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Gia công đan lưới khung thép hộp mạ kẽm chịu lực theo bản vẽ thiết kế kỹ thuật, hàn liên kết ngấu chắc chắn và sơn chống rỉ tại xưởng trước khi chuyển tới công trình.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307276_116383918611747622_3423380949103993401_5671880d519c394e8b7debd2088e13a8.jpg</image:loc>
+      <image:title>Gia Công Bàn Ghế Khung Sắt Bọc Đệm Quán Cafe Tại Xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Sản xuất đồng bộ lô bàn ghế khung sắt hộp sơn tĩnh điện kết hợp nệm bọc da màu cam cao cấp cho chuỗi quán cafe, nhà hàng tại xưởng cơ khí Mạnh Nghĩa.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286747_116383918611747622_3423380949103993401_58f88faf4e78492b9c044bffc3bf9d4b.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Phù Điêu Mâm Tròn Mạ Vàng Cổ Điển</image:title>
+      <image:caption>Bộ cổng sắt hộp 4 cánh màu vàng đồng ánh kim, trung tâm đính phù điêu mâm tròn hoa văn cổ điển mạ vàng mang ý nghĩa phong thủy vượng khí cho gia chủ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351664_116383918611747622_3423380949103993401_21087a0974e2136012391e32bc24a495.jpg</image:loc>
+      <image:title>Khung Thép Treo Biển Hiệu Quảng Cáo Ngoài Trời thi công tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Gia công hàn dựng khung sắt hộp giằng chéo chịu lực gió bão cho biển hiệu pano ngoài trời của các showroom và cửa hàng kinh doanh.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307284_116383918611747622_3423380949103993401_479a7abe23f70c745882fb24cc4da3ea.jpg</image:loc>
+      <image:title>Hoàn Thiện Đóng Gói Băng Ghế Sofa Sắt Xuất Xưởng Mạnh Nghĩa Đà Nẵng</image:title>
+      <image:caption>Băng ghế khung sắt đệm da hoàn thiện được bọc màng PE chống xước cẩn thận và tập kết vật tư thép hộp sẵn sàng vận chuyển bàn giao công trình.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307070_116383918611747622_3423380949103993401_8044eaf32f2d0af218fbd8632538b96a.jpg</image:loc>
+      <image:title>Thi Công Nhà Tiền Chế Khung Sắt Hộp Vách Kính 2 Tầng thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Kết cấu nhà tiền chế khung sắt hộp chịu lực kết hợp vách kính hiện đại 2 tầng, tối ưu công năng và thời gian thi công nhanh chóng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286754_116383918611747622_3423380949103993401_6cb0d563068a662356cd46c5e344417f.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt CNC 4 Cánh Thư Pháp Vạn Sự Như Ý</image:title>
+      <image:caption>Tuyệt tác cổng sắt cắt laser CNC tấm dày 5ly hoa văn Tùng Trúc Cúc Mai kết hợp 4 chữ thư pháp Vạn - Sự - Như - Ý, sơn vàng đồng ánh kim vương giả.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351673_116383918611747622_3423380949103993401_847523d9a3fc59e502a9283acc22083e.jpg</image:loc>
+      <image:title>Thi Công Khung Sắt Hộp Chia Phòng Ngăn Vách Thạch Cao Trong Nhà thi công tại Hòa Quý Đà Nẵng</image:title>
+      <image:caption>Gia công dựng hệ khung sắt hộp mạ kẽm chia phòng và ngăn vách nội thất, khung xương kiên cố chuẩn bị cho việc ốp tấm thạch cao hoặc ván gỗ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307291_116383918611747622_3423380949103993401_9fd2c45fdcdae77177199ca662c4129a.jpg</image:loc>
+      <image:title>Mái Kính Hoa Sắt Nghệ Thuật Biệt Thự Phong Cách Pháp thi công tại Ngũ Hành Sơn Đà Nẵng</image:title>
+      <image:caption>Họa tiết sắt uốn mỹ thuật thủ công hoa lá đối xứng mềm mại nâng đỡ vòm kính, mang hơi thở kiến trúc cổ điển quý phái cho ngôi nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307086_116383918611747622_3423380949103993401_7cba99714fe135edde72b80b1d82798c.jpg</image:loc>
+      <image:title>Gia công lắp đặt khung thép gác lửng cho showroom trưng bày tại xưởng cơ khí Đà Nẵng</image:title>
+      <image:caption>Thi công kết cấu khung thép tiền chế nhân đôi diện tích mặt bằng trưng bày cho showroom nội thất, dầm thép chịu lực sơn đen hiện đại kết hợp trần ốp thạch cao.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286762_116383918611747622_3423380949103993401_b2f66b44a311ac6043e7541cad8a51a7.jpg</image:loc>
+      <image:title>Cửa cổng sắt hộp 4 cánh họa tiết hình thoi đen trắng hiện đại Đà Nẵng</image:title>
+      <image:caption>Mẫu cổng sắt 4 cánh phong cách hiện đại với các thanh nan ngang bản lớn, điểm nhấn hình thoi phối 2 tone màu đen - trắng đối lập tinh tế và cá tính.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351690_116383918611747622_3423380949103993401_3210a956dec548ff7d81c6ee8cf7b429.jpg</image:loc>
+      <image:title>Lan can sắt mỹ thuật gác lửng điểm hoa đúc mạ vàng sang trọng Đà Nẵng</image:title>
+      <image:caption>Mẫu lan can gác lửng thông tầng bằng thanh sắt đặc rèn uốn hoa văn cổ điển, điểm xuyết họa tiết bông hoa đúc mạ vàng tinh xảo, sơn tĩnh điện chống trầy xước.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307299_116383918611747622_3423380949103993401_5fe0a4a1106275ab55be9c6104601769.jpg</image:loc>
+      <image:title>Khung Dầm Thép Hộp Mái Che Sân Vận Động Mini / Nhà Xe thi công tại Cẩm Lệ Đà Nẵng</image:title>
+      <image:caption>Thi công kết cấu dầm thép vượt nhịp lớn, tính toán tải trọng chịu gió bão ven biển, bảo vệ an toàn cho hàng chục phương tiện.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307099_116383918611747622_3423380949103993401_99eeede46800c38f2a67e70b300e88cd.jpg</image:loc>
+      <image:title>Cổng Sắt Uốn Vòm 4 Cánh Tôn Lỗ CNC Sơn Trắng thi công tại Liên Chiểu Đà Nẵng</image:title>
+      <image:caption>Cổng sắt 4 cánh thiết kế uốn vòm duyên dáng phối tấm tôn đục lỗ CNC sơn trắng thanh lịch, bảo vệ an ninh và đón gió thoáng mát.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286770_116383918611747622_3423380949103993401_936d1e96efc721e6f37c8756b890408b.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Họa Tiết Tâm Tròn Phối Nan Ngang</image:title>
+      <image:caption>Mẫu cửa cổng sắt hộp nan ngang phối nan đứng bảo vệ, tâm tròn uốn nghệ thuật kết hợp màu nâu cafe sang trọng và nan trắng trang trí thanh lịch.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307306_116383918611747622_3423380949103993401_bc99c2549361b83a68b64f1bda746438.jpg</image:loc>
+      <image:title>Mái Che Giếng Trời Kính Đổi Màu Theo Cường Độ Nắng thi công tại Nam Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Công nghệ kính đổi màu thông minh sẫm màu khi nắng gắt và trong suốt khi trời râm, cân bằng ánh sáng hoàn hảo cho phòng khách.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286777_116383918611747622_3423380949103993401_570104af3ba90b124010327da0d415dc.jpg</image:loc>
+      <image:title>Thi công ốp tôn chống thấm tường hông nhà cao tầng trọn gói bảo hành 10 năm Đà Nẵng</image:title>
+      <image:caption>Giải pháp thi công ốp tôn phẳng và tôn sóng màu chống thấm dột 100% vách tường hông nhà phố cao tầng, khung thép gia cố chắc chắn chống gió bão.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351727_116383918611747622_3423380949103993401_8ac24eb28039ed1c03efab12b6cf8fed.jpg</image:loc>
+      <image:title>Lan can cầu thang sắt mỹ thuật hoa văn mạ vàng quý phái biệt thự Đà Nẵng</image:title>
+      <image:caption>Thi công lan can cầu thang trong nhà bằng sắt đặc uốn hoa văn quả trám nghệ thuật đính bông mạ vàng sang trọng, tay vịn sắt hộp sơn đen mờ tinh tế.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307313_116383918611747622_3423380949103993401_faf8d1030adb9e33a772cceea99f304d.jpg</image:loc>
+      <image:title>Mái Tôn Giả Ngói Khung Thép Mạ Kẽm Chống Nóng Sân Thượng thi công tại Sơn Trà Đà Nẵng</image:title>
+      <image:caption>Tôn cách nhiệt sóng ngói màu xám than sang trọng, thi công nhẹ hơn ngói thật 80%, giảm tải trọng cho móng nhà phố cao tầng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286785_116383918611747622_3423380949103993401_194d0684cca8017ae34f5800485cb08b.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt CNC 4 Cánh Họa Tiết Tứ Quý Sơn Đồng Đen</image:title>
+      <image:caption>Bộ cửa cổng sắt CNC 4 cánh cắt laser hoa văn Tứ Quý tinh xảo sơn màu đồng đen cổ điển, khung viền nan đứng vững chắc, trụ cổng ốp đá marble đẳng cấp.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307321_116383918611747622_3423380949103993401_47831b21a904a79ff4d165656e728d98.jpg</image:loc>
+      <image:title>Mái Che Kính Lối Đi Hành Lang Kết Nối 2 Khối Nhà thi công tại Hải Châu Đà Nẵng</image:title>
+      <image:caption>Cầu kính và mái che kính nối liền hai block nhà phố thương mại, sàn kính cường lực 3 lớp chịu tải trọng đi lại và mái che trong suốt.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286792_116383918611747622_3423380949103993401_12e893bf5a30b0632d4ef2095c962bc3.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Mỹ Thuật Sơn Trắng Cắt CNC Hoa Mai</image:title>
+      <image:caption>Bộ cổng sắt 4 cánh sơn màu trắng sứ trang nhã, 2 cánh giữa cắt laser CNC hoa mai nghệ thuật, nan sọc hai bên thanh thoát và bảo vệ an toàn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286801_116383918611747622_3423380949103993401_a6cd78f60c4085c08e09c0ebc1697c7d.jpg</image:loc>
+      <image:title>Cửa Cổng Sắt Hộp 4 Cánh Ốp Nan Gỗ Nhựa Composite</image:title>
+      <image:caption>Mẫu cổng sắt hộp 4 cánh kết hợp tấm nan gỗ nhựa composite ngoài trời chống nắng mưa cong vênh, tạo không gian kín đáo, ấm cúng và sang trọng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307148_116383918611747622_3423380949103993401_0373068d910a72f0b9052bc81c70634d.jpg</image:loc>
+      <image:title>Lan Can Sắt Hộp Kết Hợp Nan Gỗ Nhựa Ngoài Trời thi công tại Khuê Trung Đà Nẵng</image:title>
+      <image:caption>Sự hòa quyện giữa khung sắt đen đầm chắc và nan gỗ nhựa composite màu nâu trầm ấm, chịu nước 100% phù hợp biệt thự vườn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351757_116383918611747622_3423380949103993401_dbe1407b141fc31dd6db76430ee8d5db.jpg</image:loc>
+      <image:title>Tập Kết Cấu Kiện Cửa Đã Hoàn Thiện Chuẩn Bị Vận Chuyển thi công tại Nam Việt Á Đà Nẵng</image:title>
+      <image:caption>Sản phẩm sau khi gia công được quấn màng PE và xốp chống sốc bảo vệ cẩn thận, dán tem kiểm định chất lượng trước khi lên xe giao hàng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286815_116383918611747622_3423380949103993401_69bcf1f5f3d108cd4f8b79908878cd8e.jpg</image:loc>
+      <image:title>Khung sắt và Inox 304 bảo vệ cửa sổ mặt tiền chống trộm kiên cố Đà Nẵng</image:title>
+      <image:caption>Giải pháp bảo vệ an toàn cho hệ cửa sổ nhà phố bằng khung thép sơn trắng và khung hộp inox 304 hoa văn hình thoi kiên cố, chống trộm đột nhập.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351765_116383918611747622_3423380949103993401_deea768ac5912d02035c3c529fc9fc75.jpg</image:loc>
+      <image:title>Đội Thợ Mạnh Nghĩa Thi Công Căn Chỉnh Laser Tại Công Trình thi công tại Khuê Trung Đà Nẵng</image:title>
+      <image:caption>Hình ảnh thợ lắp dựng sử dụng máy cân bằng laser tia xanh căn chỉnh độ thẳng đứng và độ vuông góc của cửa sổ, bảo đảm vận hành êm ái.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392307449_116383918611747622_3423380949103993401_1aa5384af23c5c1d96e5ca6f69561762.jpg</image:loc>
+      <image:title>Ốp Tôn Bịt Tường Chống Thấm Mặt Hông Nhà Phố Chống Mưa Bão thi công tại Liên Chiểu Đà Nẵng</image:title>
+      <image:caption>Thi công ốp tôn phẳng và tôn sóng bịt kín mặt tường hông tiếp giáp nhà liền kề, ngăn triệt để hiện tượng thấm dột, ẩm mốc tường nhà mùa bão.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286823_116383918611747622_3423380949103993401_51ca3d3ea1ef83af732f41d24739ac82.jpg</image:loc>
+      <image:title>Lan Can Cầu Thang Sắt Mỹ Thuật Tay Vịn Gỗ Tự Nhiên</image:title>
+      <image:caption>Lan can cầu thang sắt đặc uốn hoa văn quả trám nghệ thuật sơn đen mờ, kết hợp tay vịn gỗ gõ đỏ tự nhiên bo lượn mềm mại theo từng nhịp cầu thang.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351773_116383918611747622_3423380949103993401_9510cd8cf0c32bd5001d6d6123350511.jpg</image:loc>
+      <image:title>Thi công ốp tôn sóng màu chống thấm vách tường cao tầng chống bão lũ Đà Nẵng</image:title>
+      <image:caption>Giải pháp bọc tôn sóng mạ màu chống thấm dột triệt để vách tường nhà cao tầng, gia cố khung xương thép hộp chịu bão và trét keo chuyên dụng quanh ô cửa sổ.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286831_116383918611747622_3423380949103993401_1c4d5baf5516aca27130e85155787911.jpg</image:loc>
+      <image:title>Cầu Thang Kính Cường Lực Chân Trụ Lửng Inox Tay Vịnh Gỗ</image:title>
+      <image:caption>Thi công cầu thang kính cường lực 10ly trong suốt, chân trụ lửng inox 304 kép kẹp kính chắc chắn, tay vịn gỗ vuông mang lại không gian mở thoáng sáng.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351782_116383918611747622_3423380949103993401_71ecfc899cd63fb034209bef4959f797.jpg</image:loc>
+      <image:title>Khảo Sát &amp; Lắp Dựng Khung Xương Ốp Tôn Chống Thấm Tường thi công tại Hòa Xuân Đà Nẵng</image:title>
+      <image:caption>Đội thợ kỹ thuật Mạnh Nghĩa đu dây khảo sát bề mặt tường nứt ngấm nước và bắn khung xương thép hộp mạ kẽm định vị trước khi lợp tôn phẳng chống dột.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286838_116383918611747622_3423380949103993401_abb6b9716521033db50a704295472a25.jpg</image:loc>
+      <image:title>Khung Sắt Sơn Trắng Bảo Vệ Cửa Sổ Mở Quay An Toàn</image:title>
+      <image:caption>Lắp đặt khung sắt hộp sơn tĩnh điện trắng sứ chia ô hiện đại bên trong cửa sổ mở quay, bảo vệ an toàn cho trẻ nhỏ và chống trộm hiệu quả.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351790_116383918611747622_3423380949103993401_42ab375827041bef954c2d1d36060fa6.jpg</image:loc>
+      <image:title>Lan can ban công sân thượng sắt mỹ thuật lát sàn gỗ nhựa ngoài trời Đà Nẵng</image:title>
+      <image:caption>Hoàn thiện hệ lan can sắt nghệ thuật ban công sân thượng biệt thự ven sông, đỉnh trụ gắn quả cầu mạ vàng phong thủy, kết hợp lát sàn gỗ nhựa ngoài trời cao cấp.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286853_116383918611747622_3423380949103993401_a766474b3f8db712b4af63de5fbe6c0d.jpg</image:loc>
+      <image:title>Cửa cổng sắt hộp 4 cánh phối tấm CNC khối lập thể 3D sang trọng Đà Nẵng</image:title>
+      <image:caption>Mẫu cổng sắt 4 cánh cao cấp với 2 cánh ngoài cắt laser CNC họa tiết khối lập thể 3D độc đáo, cánh giữa dùng thép hộp song đứng kiên cố chống cạy phá.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392351799_116383918611747622_3423380949103993401_afcbe56e3b3c7a19f2a302dcfadbfbbb.jpg</image:loc>
+      <image:title>Lắp Dựng Hệ Khung Thép Sàn &amp; Lan Can Ban Công Sân Thượng</image:title>
+      <image:caption>Trực tiếp hàn ráp kết cấu khung thép chịu lực ban công sân thượng và lắp đặt lan can bảo vệ kiên cố tại biệt thự ven sông trước khi lót sàn gỗ ngoài trời.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286860_116383918611747622_3423380949103993401_e0925a7769b2be1642295d6f2c67c090.jpg</image:loc>
+      <image:title>Lan Can Gác Lửng Sắt Mỹ Thuật Uốn Hoa Văn Tay Vịnh Gỗ</image:title>
+      <image:caption>Thi công lan can gác lửng thông tầng hoa sắt mỹ thuật uốn chữ C đối xứng sơn đen sần, tay vịn gỗ tự nhiên ấm cúng hài hòa với tường ốp đá tự nhiên.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286867_116383918611747622_3423380949103993401_7c8ad702bbcb49b3d0f2e6a28e4bf74a.jpg</image:loc>
+      <image:title>Lan Can Ban Công Sắt Mỹ Thuật Uốn Bụng Bầu Cổ Điển</image:title>
+      <image:caption>Gia công lan can ban công uốn dáng bụng bầu mềm mại mang đậm phong cách kiến trúc Pháp cổ điển, tay vịn đúc dày dặn và sơn phủ tĩnh điện chống rỉ sét.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286877_116383918611747622_3423380949103993401_be4ec76236903029fc7e599ce857ffe3.jpg</image:loc>
+      <image:title>Thi Công Ốp Tôn Chống Thấm Tường Tòa Nhà Cao Tầng</image:title>
+      <image:caption>Dịch vụ cứu cánh chống thấm tường hông tòa nhà cao 5 tầng bằng tôn mạ màu xanh ngọc, vít bắt đệm cao su và trám keo kín kẽ ngăn 100% ngấm nước mưa.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286884_116383918611747622_3423380949103993401_7dbf1e498187b22bc6127f6629e6a7b2.jpg</image:loc>
+      <image:title>Ốp Tôn Chống Thấm Tường Bao Kèm Khung Sắt Bảo Vệ Sân Thượng</image:title>
+      <image:caption>Kết hợp giải pháp ốp tôn phẳng chống thấm vách tường bên dưới và lắp dựng hệ khung chuồng cọp sắt hộp bảo vệ sân phơi trên tầng thượng an toàn.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://manhnghia2.vn/assets/images/projects/1790392286891_116383918611747622_3423380949103993401_c9e0d91f254f1e14958b23f2bb4cb632.jpg</image:loc>
+      <image:title>Bọc Tôn Chống Thấm Vách Tường Khe Hẹp Giữa Hai Nhà Liền Kề</image:title>
+      <image:caption>Xử lý triệt để khe hẹp giữa 2 nhà phố liền kề bằng máng tôn úp nóc và tôn phẳng ốp kín vách, ngăn hoàn toàn nước mưa chảy tràn gây ẩm mốc tường nhà.</image:caption>
+      <image:geo_location>Đà Nẵng, Việt Nam</image:geo_location>
     </image:image>
   </url>
 </urlset>

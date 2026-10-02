@@ -3781,3 +3781,224 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/* ==========================================================================
+   WORKSHOP REAL & CAREER SECTION (SEO & Google Image Ranking)
+   ========================================================================== */
+.workshop-real-section {
+  padding: 80px 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.workshop-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--border-blue);
+}
+
+.workshop-card-img {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  background: #0B2340;
+}
+
+.workshop-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.workshop-card:hover .workshop-card-img img {
+  transform: scale(1.05);
+}
+
+.workshop-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(11, 35, 64, 0.88);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.workshop-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+.workshop-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.4;
+}
+
+.workshop-card-content p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.workshop-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.workshop-career-banner {
+  margin-top: 44px;
+  background: linear-gradient(135deg, #0B2340 0%, #16375E 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 36px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  box-shadow: 0 16px 40px rgba(11, 35, 64, 0.18);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.workshop-career-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(8, 102, 232, 0.25) 0%, rgba(8, 102, 232, 0) 70%);
+  pointer-events: none;
+}
+
+.career-banner-left {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.career-banner-left .badge-tech {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #38BDF8;
+}
+
+.career-banner-left h3 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 12px 0 10px 0;
+  letter-spacing: -0.02em;
+}
+
+.career-banner-left p {
+  font-size: 0.95rem;
+  color: #E2E8F0;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 680px;
+}
+
+.career-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 18px;
+}
+
+.career-perk-item {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.career-banner-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 250px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.career-banner-right .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 13px 20px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.career-banner-right .btn-zalo-outline {
+  border-color: #38BDF8;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.career-banner-right .btn-zalo-outline:hover {
+  background: rgba(56, 189, 248, 0.2);
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .workshop-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .workshop-career-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 24px;
+  }
+
+  .career-banner-right {
+    width: 100%;
+  }
+
+  .career-banner-left h3 {
+    font-size: 1.35rem;
+  }
+}
